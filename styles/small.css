@@ -185,17 +185,19 @@ footer p {
 
 /* Student Photo */
 .image-container {
+    display: flex;
     padding: 1rem;
     display: block;
     width: 100%;
+    justify-content: center;
 }
 
 .myself {
     display: block;
     width: 85%;
     height: auto;
-    justify-self: center;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Courses */

@@ -1,0 +1,252 @@
+/* -------- COLOR SCHEME ---------
+
+    Primary: Deep Space Blue #0F2942
+    Secondary: Pine Teal #1B4332
+    Accent: Oxblood #990000
+
+    Body Font: Lato
+    Heading Font: Arvo
+*/
+
+:root {
+    --primary-color: #0F2942;
+    --primary-color-alt: #E3F2FD;
+    --secondary-color: #1B4332;
+    --secondary-color-alt: #E8F5E9;
+    --accent-color: #990000;
+    --accent-color-alt: #FFD54F;
+    --text-on-color: #fff;
+    --text-on-alt: #000;
+    --faint-color-border: 1px solid #ddd;
+    --heading-font: "Arvo", Cambria, Georgia, 'Times New Roman', serif;
+    --body-font: "Lato", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: var(--faint-color-border);
+    column-gap: 8px;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hamburger {
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* Navigation Menu */
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.open {
+    display: block;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    border-collapse: collapse;
+}
+
+.nav-menu li {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-bottom: var(--faint-color-border);
+}
+
+.nav-menu a {
+    display: block;
+    padding: .5rem 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-menu a:hover {
+    background-color: var(--accent-color-alt);
+}
+
+.current {
+    background-color: #eee;
+}
+
+/* Title */
+h1 {
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    color: var(--text-on-color);
+    padding: 1rem 10px;
+    font-family: var(--heading-font);
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    font-family: var(--heading-font);
+    margin: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px 20px;
+}
+
+.social a {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 50%;
+    transition: transform 250ms ease-in-out;
+}
+
+.social img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.social a:hover {
+    border: 1px solid #FFD54F;
+    transform: scale(1.1);
+}
+
+/* -------- Main Content -------- */
+
+/* Cards */
+.card {
+    border:1px solid #999;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: var(--text-on-color);
+    padding: .5rem 1rem;
+}
+
+.card p {
+    margin: 1rem;
+}
+
+/* Student Photo */
+.image-container {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.myself {
+    display: block;
+    width: 85%;
+    height: auto;
+    justify-self: center;
+    max-width: 400px;
+}
+
+/* Courses */
+.buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.buttons-list button {
+    display: block;
+    padding: .5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #ddd;
+    cursor: pointer;
+}
+
+.buttons-list button:hover {
+    background-color: var(--accent-color-alt);
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+    gap: 5px;
+}
+
+.course {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: large;
+    background-color: var(--primary-color);
+    color: var(--text-on-color);
+}
+
+.course.completed::after {
+    content: "\2713";
+    margin-left: 5px;
+    font-size: larger;
+}
+
+#totalCredits {
+    font-weight: 600;
+}

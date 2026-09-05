@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Homepage - Frontend Development</title>
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="WDD 231 — Frontend Development I — Andrianarivo Andy: Homepage for the course">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.svg" alt="Home logo" width="1" height="1"></a>
+        <span>The Site Name</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav class="nav-menu">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                [Website name] is a ... . Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia saepe iure, eum nihil perferendis ipsa qui veniam blanditiis beatae officia expedita? Porro, nesciunt possimus. Distinctio officiis ipsam eveniet doloribus fugit non ex illum doloremque aliquam fugiat voluptas, facilis nobis, perspiciatis quaerat dolor 
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+
+                <picture class="image-container"><img src="images/andrianarivo-andy.webp" alt="A picture of myself" class="myself" width="300" height="300"></picture>
+
+        </section>
+
+        <section class="card">
+            <h2>Web Certificate Course</h2>
+            <div class="buttons-list">
+                <button id="allCourses">All</button>
+                <button id="wddCourses">WDD</button>
+                <button id="cseCourses">CSE</button>
+            </div>
+
+            <article class="courses-list">
+            </article>
+            <p>The total(completed) credit for the course listed above is <span id="totalCredits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Pika4ndy" target="_blank"><img src="images/github-icon.svg" alt="Github Logo Icon" width="30" height="30"></a>
+            <a href="www.linkedin.com/in/andy-andrianarivo" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="30" height="30"></a>
+            <a href="https://www.facebook.com/pika4ndy/" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="30" height="30"></a>
+            <a href="https://codepen.io/pika4ndy" target="_blank"><img src="images/codepen-icon.svg" alt="Codepen Logo Icon" width="30" height="30"></a>
+        </div>
+        <p id="copyright">&copy; <span id="currentYear"></span> &bull; Andrianarivo Andy &bull; Antananarivo, Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

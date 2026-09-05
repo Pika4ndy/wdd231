@@ -187,7 +187,6 @@ footer p {
 .image-container {
     display: flex;
     padding: 1rem;
-    display: block;
     width: 100%;
     justify-content: center;
 }
@@ -197,7 +196,6 @@ footer p {
     width: 85%;
     height: auto;
     max-width: 400px;
-    margin: 0 auto;
 }
 
 /* Courses */

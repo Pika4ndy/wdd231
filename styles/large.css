@@ -1,6 +1,6 @@
 @media screen and (min-width:900px) {
     header, main, nav, footer {
-        max-width: 1400px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
@@ -25,4 +25,24 @@
     .nav-menu ul {
         flex-direction: row;
     }
+
+    /* Cards */
+    main {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+    }
+
+    h1, .card:last-child:nth-child(even) {
+        grid-column: 1/-1;
+    }
+
+    .courses-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+    .course {
+        width: 100%;
+    }
+
 }

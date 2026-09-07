@@ -202,21 +202,24 @@ footer p {
 .buttons-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
     margin-top: 1rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    max-width: 100%;
 }
 
 .buttons-list button {
     display: block;
-    padding: .5rem 2rem;
+    text-align: center;
+    /* padding: .5rem 2rem; */
+    min-height: 44px;
     font-size: 1.4rem;
     font-weight: 700;
     border: 1px solid #555;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #ddd;
     cursor: pointer;
+    width: 33%;
 }
 
 .buttons-list button:hover {
@@ -225,9 +228,9 @@ footer p {
 
 .courses-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 1rem;
     gap: 5px;
+    justify-items: center;
 }
 
 .course {
@@ -239,6 +242,7 @@ footer p {
     font-size: large;
     background-color: var(--primary-color);
     color: var(--text-on-color);
+    width: 85%;
 }
 
 .course.completed::after {
@@ -249,4 +253,11 @@ footer p {
 
 #totalCredits {
     font-weight: 600;
+}
+
+/* Ids */
+#myAge {
+    font-style: italic;
+    cursor: help;
+    text-decoration: dashed 1px #aaa;
 }

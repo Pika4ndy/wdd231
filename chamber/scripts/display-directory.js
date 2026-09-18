@@ -6,13 +6,13 @@ async function fetchMembersData() {
     const data = await response.json();
 
     data.members.forEach(
-        (member) => {
-            createCard(member);
+        (member, index) => {
+            createCard(member, index === 0);
         }
     );
 }
 
-function createCard(member) {
+function createCard(member, isFirst) {
     const card = document.createElement("article");
     const logoImage = document.createElement("img");
     const heroImage = document.createElement("img");
@@ -29,17 +29,22 @@ function createCard(member) {
 
     logoImage.src = member.logo;
     logoImage.alt = `${member.name} Logo`;
-    logoImage.width = 50;
-    logoImage.height = 50;
+    logoImage.setAttribute("width", 60);
+    logoImage.setAttribute("height", 60);
     logoImage.classList.add("simple-logo");
-    logoImage.loading = "lazy";
+    logoImage.decoding = "async";
+    logoImage.loading = isFirst ? "eager" : "lazy";
 
     heroImage.src = member.heroImage;
     heroImage.alt = `${member.name} Hero Image`;
-    heroImage.width = 150;
-    heroImage.height = 150;
+    heroImage.setAttribute("width", 300);
+    heroImage.setAttribute("height", 80);
     heroImage.classList.add("hero-logo");
-    heroImage.loading = "lazy";
+    heroImage.decoding = "async";
+    heroImage.loading = isFirst ? "eager" : "lazy";
+    if (isFirst) {
+        heroImage.setAttribute("fetchpriority", "high");
+    }
 
     businessName.textContent = member.name;
     tagLine.textContent = member.tagline;

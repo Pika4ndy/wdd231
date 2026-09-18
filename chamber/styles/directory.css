@@ -23,10 +23,6 @@
     background-color: var(--accent-color);
 }
 
-/* #filterList {
-    justify-self: end;
-} */
-
 /* Businesses List Cards */
 #memberList {
     padding: 1rem;
@@ -96,6 +92,7 @@
     align-items: center;
     border-top: 1px solid var(--primary-color);
     padding: 1rem;
+    gap: 10px;
 }
 
 .list .card:last-child {
@@ -113,6 +110,8 @@
 .list .card .simple-logo {
     display: block;
     float: left;
+    width: 100%;
+    object-fit: contain;
 }
 
 .list hr {
@@ -123,4 +122,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .grid .card {
+        min-width: none;
+        width: 100%;
+    }
+
+    .list .card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }

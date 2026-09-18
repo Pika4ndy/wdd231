@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankadikely Chamber of Commerce</title>
+    <title>Ankadikely Chamber of Commerce — Directory Page</title>
     <meta name="author" content="Andrianarivo Andy">
-    <meta name="description" content="WDD 231 — Frontend Development I — Andrianarivo Andy ; Chamber of Commerce Project — Directory Page: Contains a list of businesses and organizations belonging to the chamber of commerce.">
+    <meta name="description" content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Directory Page:list of businesses and organizations belonging to the chamber of commerce">
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)">
+
+    <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/view-display.js" defer></script>
@@ -20,13 +22,12 @@
 
     <meta property="og:title" content="Ankadikely Chamber of Commerce">
     <meta property="og:description" content="Discover the businesses and organizations of Ankadikely Chamber of Commerce">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:image" content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp">
     <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,600&family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -66,9 +67,9 @@
         </div>
         <div>
             <nav class="socials">
-                <div class="socials-site facebook"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="30" height="30"></a></div>
-                <div class="socials-site instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Logo Icon" width="30" height="30"></a></div>
-                <div class="socials-site linkedin"><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="30" height="30"></a></div>
+                <div class="socials-site facebook"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="50" height="50"></a></div>
+                <div class="socials-site instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Logo Icon" width="50" height="50"></a></div>
+                <div class="socials-site linkedin"><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="50" height="50"></a></div>
             </nav>
         </div>
         <div class="info">

@@ -1,0 +1,316 @@
+{
+    "members": [
+  {
+    "id": "artistry",
+    "name": "Artistry Creative Studio",
+    "tagline": "Turning brand visions into visual masterpieces.",
+    "description": "Artistry Creative Studio is a full-service graphic design and branding agency serving small businesses and nonprofits across the region. The team specializes in logo design, brand identity systems, and print collateral that help local companies stand out. Since opening, they've partnered with dozens of Ankadikely-area organizations to elevate their visual presence.",
+    "yearFounded": 2011,
+    "logo": "./images/members/artistry-logo.webp",
+    "heroImage": "./images/members/artistry.webp",
+    "membership": {
+      "level": 3,
+      "memberSince": 2012
+    },
+    "categories": {
+      "primarySector": "Web Design & Marketing",
+      "subcategories": ["Branding & Identity", "Graphic Design", "Print Design", "Marketing Collateral"]
+    },
+    "contact": {
+      "address": "142 Fisokoana Street, Ankadikely, TX 75001",
+      "phone": "+261 034 12 345 67",
+      "email": "hello@artistrystudio.com",
+      "websiteUrl": "https://www.artistrystudio.com"
+    },
+    "keywords": ["branding", "graphic design", "logo design", "print design", "creative agency", "visual identity"]
+  },
+  {
+    "id": "grapherz",
+    "name": "Grapherz Visual Media",
+    "tagline": "Capturing your brand story through photography and film.",
+    "description": "Grapherz Visual Media provides professional photography, videography, and visual content production for local businesses and events. The studio works with retailers, restaurants, and civic organizations to create compelling imagery for marketing campaigns. Their work has helped numerous Ankadikely companies boost their online engagement.",
+    "yearFounded": 2015,
+    "logo": "./images/members/grapherz-logo.webp",
+    "heroImage": "./images/members/grapherz.webp",
+    "membership": {
+      "level": 2,
+      "memberSince": 2016
+    },
+    "categories": {
+      "primarySector": "Web Design & Marketing",
+      "subcategories": ["Photography", "Videography", "Content Production", "Social Media Marketing"]
+    },
+    "contact": {
+      "address": "27 Lalana Fahazavana, Ankadikely, TX 75002",
+      "phone": "+261 034 23 456 78",
+      "email": "info@grapherz.com",
+      "websiteUrl": "https://www.grapherz.com"
+    },
+    "keywords": ["photography", "videography", "visual content", "media production", "branding", "marketing"]
+  },
+  {
+    "id": "grapho",
+    "name": "Grapho Software Solutions",
+    "tagline": "Custom software engineering for growing businesses.",
+    "description": "Grapho Software Solutions builds custom web and mobile applications for small and mid-sized enterprises throughout the region. The company focuses on scalable, secure software that streamlines operations for retailers, logistics firms, and professional service providers. Grapho's local development team prides itself on responsive support and long-term partnerships.",
+    "yearFounded": 2018,
+    "logo": "./images/members/grapho-logo.webp",
+    "heroImage": "./images/members/grapho.webp",
+    "membership": {
+      "level": 1,
+      "memberSince": 2019
+    },
+    "categories": {
+      "primarySector": "Software Development",
+      "subcategories": ["Web Application Development", "Mobile App Development", "Custom Software", "API Integration"]
+    },
+    "contact": {
+      "address": "58 Route des Hydrocarbures, Ankadikely, TX 75003",
+      "phone": "+261 034 34 567 89",
+      "email": "contact@graphosoft.com",
+      "websiteUrl": "https://www.graphosoft.com"
+    },
+    "keywords": ["software development", "web apps", "mobile apps", "custom software", "technology", "engineering"]
+  },
+  {
+    "id": "iconic",
+    "name": "Iconic Business Consulting",
+    "tagline": "Strategic guidance that turns potential into performance.",
+    "description": "Iconic Business Consulting helps small and mid-sized companies refine their operations, strategy, and growth plans. The firm offers tailored consulting services in market analysis, process improvement, and leadership development. Iconic has guided numerous Ankadikely-based businesses through successful expansion phases.",
+    "yearFounded": 2009,
+    "logo": "./images/members/iconic-logo.webp",
+    "heroImage": "./images/members/iconic.webp",
+    "membership": {
+      "level": 2,
+      "memberSince": 2010
+    },
+    "categories": {
+      "primarySector": "Consulting",
+      "subcategories": ["Business Strategy", "Process Improvement", "Market Analysis", "Leadership Coaching"]
+    },
+    "contact": {
+      "address": "9 Avenue de l'Independance, Ankadikely, TX 75004",
+      "phone": "+261 034 45 678 90",
+      "email": "info@iconicconsulting.com",
+      "websiteUrl": "https://www.iconicconsulting.com"
+    },
+    "keywords": ["business consulting", "strategy", "growth", "leadership", "operations", "advisory"]
+  },
+  {
+    "id": "iconize",
+    "name": "Iconize Brand Studio",
+    "tagline": "Small icons, big impact—crafting memorable brand marks.",
+    "description": "Iconize Brand Studio specializes in logo design, iconography, and brand style guides for startups and established companies alike. The studio's minimalist design philosophy has made it a go-to partner for businesses looking to modernize their image. Iconize regularly collaborates with local Chamber members on co-branded marketing initiatives.",
+    "yearFounded": 2017,
+    "logo": "./images/members/iconize-logo.webp",
+    "heroImage": "./images/members/iconize.webp",
+    "membership": {
+      "level": 1,
+      "memberSince": 2018
+    },
+    "categories": {
+      "primarySector": "Web Design & Marketing",
+      "subcategories": ["Logo Design", "Brand Identity", "Iconography", "Style Guides"]
+    },
+    "contact": {
+      "address": "301 Rue des Artisans, Ankadikely, TX 75005",
+      "phone": "+261 034 56 789 01",
+      "email": "hello@iconize.design",
+      "websiteUrl": "https://www.iconize.design"
+    },
+    "keywords": ["logo design", "branding", "iconography", "brand identity", "design studio", "visual branding"]
+  },
+  {
+    "id": "imprintify",
+    "name": "Imprintify Print & Packaging",
+    "tagline": "Custom printing and packaging solutions, made local.",
+    "description": "Imprintify Print & Packaging manufactures custom-printed packaging, promotional merchandise, and signage for regional businesses. Their production facility serves retailers, restaurants, and event planners who need durable, branded materials at scale. Imprintify's quick turnaround times have made it a trusted supplier throughout the Ankadikely business community.",
+    "yearFounded": 2005,
+    "logo": "./images/members/imprintify-logo.webp",
+    "heroImage": "./images/members/imprintify.webp",
+    "membership": {
+      "level": 3,
+      "memberSince": 2006
+    },
+    "categories": {
+      "primarySector": "Packaging",
+      "subcategories": ["Custom Printing", "Promotional Products", "Packaging Design", "Signage Production"]
+    },
+    "contact": {
+      "address": "77 Zone Industrielle, Ankadikely, TX 75006",
+      "phone": "+261 034 67 890 12",
+      "email": "orders@imprintify.com",
+      "websiteUrl": "https://www.imprintify.com"
+    },
+    "keywords": ["printing", "packaging", "promotional products", "custom merchandise", "signage", "manufacturing"]
+  },
+  {
+    "id": "logique",
+    "name": "Logique Systems",
+    "tagline": "Logical solutions for complex business challenges.",
+    "description": "Logique Systems develops enterprise software and IT infrastructure solutions for businesses across manufacturing, logistics, and finance sectors. The company's engineers specialize in database architecture, systems integration, and workflow automation. Logique has become a key technology partner for several large employers in the Ankadikely area.",
+    "yearFounded": 2013,
+    "logo": "./images/members/logique-logo.webp",
+    "heroImage": "./images/members/logique.webp",
+    "membership": {
+      "level": 2,
+      "memberSince": 2014
+    },
+    "categories": {
+      "primarySector": "Software Development",
+      "subcategories": ["Enterprise Software", "Systems Integration", "Database Architecture", "Workflow Automation"]
+    },
+    "contact": {
+      "address": "14 Boulevard Tech, Ankadikely, TX 75007",
+      "phone": "+261 034 78 901 23",
+      "email": "info@logiquesystems.com",
+      "websiteUrl": "https://www.logiquesystems.com"
+    },
+    "keywords": ["enterprise software", "it systems", "automation", "database", "technology", "integration"]
+  },
+  {
+    "id": "optimal",
+    "name": "Optimal Performance Consulting",
+    "tagline": "Optimizing operations for measurable, lasting results.",
+    "description": "Optimal Performance Consulting works with businesses to streamline workflows, reduce costs, and improve overall efficiency. Their consultants conduct operational audits and implement data-driven improvement plans tailored to each client's industry. The firm has a strong track record helping local manufacturers and retailers boost profitability.",
+    "yearFounded": 2010,
+    "logo": "./images/members/optimal-logo.webp",
+    "heroImage": "./images/members/optimal.webp",
+    "membership": {
+      "level": 3,
+      "memberSince": 2011
+    },
+    "categories": {
+      "primarySector": "Consulting",
+      "subcategories": ["Operations Consulting", "Efficiency Audits", "Cost Reduction", "Process Optimization"]
+    },
+    "contact": {
+      "address": "5 Rue de l'Efficacite, Ankadikely, TX 75008",
+      "phone": "+261 034 89 012 34",
+      "email": "contact@optimalconsulting.com",
+      "websiteUrl": "https://www.optimalconsulting.com"
+    },
+    "keywords": ["consulting", "operations", "efficiency", "cost reduction", "process improvement", "business advisory"]
+  },
+  {
+    "id": "prelude",
+    "name": "Prelude Events & Catering",
+    "tagline": "Setting the perfect stage for your most important moments.",
+    "description": "Prelude Events & Catering plans and hosts weddings, corporate functions, and community celebrations at its indoor and outdoor venue spaces. The company also offers full-service catering with customizable menus for events of any size. Prelude has become a favored venue for Chamber events and local milestone celebrations.",
+    "yearFounded": 2016,
+    "logo": "./images/members/prelude-logo.webp",
+    "heroImage": "./images/members/prelude.webp",
+    "membership": {
+      "level": 1,
+      "memberSince": 2017
+    },
+    "categories": {
+      "primarySector": "Event Venues & Catering",
+      "subcategories": ["Event Planning", "Wedding Venues", "Corporate Catering", "Banquet Services"]
+    },
+    "contact": {
+      "address": "220 Chemin des Roses, Ankadikely, TX 75009",
+      "phone": "+261 034 90 123 45",
+      "email": "events@preludevenue.com",
+      "websiteUrl": "https://www.preludevenue.com"
+    },
+    "keywords": ["event venue", "catering", "weddings", "corporate events", "banquets", "celebrations"]
+  },
+  {
+    "id": "signum",
+    "name": "Signum Sign & Display",
+    "tagline": "Custom signage that makes your business impossible to miss.",
+    "description": "Signum Sign & Display designs, fabricates, and installs custom signage, vehicle wraps, and architectural displays for businesses throughout the region. Their in-house production shop handles everything from small storefront signs to large-scale exterior installations. Signum's work is visible on storefronts across the Ankadikely commercial district.",
+    "yearFounded": 2008,
+    "logo": "./images/members/signum-logo.webp",
+    "heroImage": "./images/members/signum.webp",
+    "membership": {
+      "level": 2,
+      "memberSince": 2009
+    },
+    "categories": {
+      "primarySector": "Light Manufacturing",
+      "subcategories": ["Custom Signage", "Vehicle Wraps", "Display Fabrication", "Installation Services"]
+    },
+    "contact": {
+      "address": "63 Route Industrielle, Ankadikely, TX 75010",
+      "phone": "+261 034 01 234 56",
+      "email": "sales@signumsigns.com",
+      "websiteUrl": "https://www.signumsigns.com"
+    },
+    "keywords": ["signage", "sign fabrication", "vehicle wraps", "displays", "manufacturing", "installation"]
+  },
+  {
+    "id": "vectra",
+    "name": "Vectra Cyber Defense",
+    "tagline": "Protecting local businesses from digital threats.",
+    "description": "Vectra Cyber Defense provides network security assessments, threat monitoring, and incident response services for small and mid-sized businesses. The firm helps clients across finance, healthcare, and retail sectors safeguard sensitive data and stay compliant with security standards. Vectra's local support team offers rapid response for businesses throughout Ankadikely.",
+    "yearFounded": 2019,
+    "logo": "./images/members/vectra-logo.webp",
+    "heroImage": "./images/members/vectra.webp",
+    "membership": {
+      "level": 3,
+      "memberSince": 2020
+    },
+    "categories": {
+      "primarySector": "Cybersecurity",
+      "subcategories": ["Network Security", "Threat Monitoring", "Incident Response", "Compliance Consulting"]
+    },
+    "contact": {
+      "address": "88 Avenue de la Securite, Ankadikely, TX 75011",
+      "phone": "+261 034 12 345 60",
+      "email": "info@vectracyber.com",
+      "websiteUrl": "https://www.vectracyber.com"
+    },
+    "keywords": ["cybersecurity", "network security", "threat monitoring", "data protection", "compliance", "it security"]
+  },
+  {
+    "id": "visualy",
+    "name": "Visualy Digital Marketing",
+    "tagline": "Data-driven digital marketing that grows your audience.",
+    "description": "Visualy Digital Marketing helps local businesses grow their online presence through social media management, search engine optimization, and paid advertising campaigns. The agency's analytics-focused approach ensures clients see measurable returns on their marketing investment. Visualy has partnered with restaurants, retailers, and service providers throughout the Ankadikely area.",
+    "yearFounded": 2020,
+    "logo": "./images/members/visualy-logo.webp",
+    "heroImage": "./images/members/visualy.webp",
+    "membership": {
+      "level": 1,
+      "memberSince": 2021
+    },
+    "categories": {
+      "primarySector": "Web Design & Marketing",
+      "subcategories": ["Social Media Marketing", "SEO", "Paid Advertising", "Analytics & Reporting"]
+    },
+    "contact": {
+      "address": "39 Rue du Commerce, Ankadikely, TX 75012",
+      "phone": "+261 034 23 456 70",
+      "email": "hello@visualy.com",
+      "websiteUrl": "https://www.visualy.com"
+    },
+    "keywords": ["digital marketing", "social media", "seo", "advertising", "analytics", "online marketing"]
+  },
+  {
+    "id": "wayline",
+    "name": "Wayline Freight Solutions",
+    "tagline": "Reliable freight forwarding, on time, every time.",
+    "description": "Wayline Freight Solutions coordinates freight forwarding and logistics services for manufacturers and distributors across the region. The company manages shipment scheduling, customs documentation, and last-mile delivery to keep supply chains moving smoothly. Wayline has grown into a trusted logistics partner for several Ankadikely-area industrial employers.",
+    "yearFounded": 2007,
+    "logo": "./images/members/wayline-logo.webp",
+    "heroImage": "./images/members/wayline.webp",
+    "membership": {
+      "level": 2,
+      "memberSince": 2008
+    },
+    "categories": {
+      "primarySector": "Freight & Freight Forwarding",
+      "subcategories": ["Freight Forwarding", "Customs Documentation", "Supply Chain Coordination", "Last-Mile Delivery"]
+    },
+    "contact": {
+      "address": "150 Zone Logistique, Ankadikely, TX 75013",
+      "phone": "+261 034 34 567 80",
+      "email": "dispatch@waylinefreight.com",
+      "websiteUrl": "https://www.waylinefreight.com"
+    },
+    "keywords": ["freight forwarding", "logistics", "supply chain", "shipping", "distribution", "transportation"]
+  }
+]
+}

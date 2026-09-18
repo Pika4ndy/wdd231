@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankadikely Chamber of Commerce</title>
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="WDD 231 — Frontend Development I — Andrianarivo Andy ; Chamber of Commerce Project — Directory Page: Contains a list of businesses and organizations belonging to the chamber of commerce.">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/view-display.js" defer></script>
+    <script src="scripts/display-directory.js" defer></script>
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Ankadikely Chamber of Commerce">
+    <meta property="og:description" content="Discover the businesses and organizations of Ankadikely Chamber of Commerce">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo-icon-white.svg" alt="Ankadikely Chamber of Commerce Logo" width="10" height="10"></a>
+        <span class="site-title">Ankadikely Chamber of Commerce</span>
+        <button id="toggleDarkMode" aria-label="toggle dark mode">
+            <img src="images/dark-mode.svg" alt="dark mode button" width="1" height="1">
+        </button>
+        <button class="hamburger-menu" aria-label="navigation"></button>
+            <nav class="" id="navigationMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li class="current"><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Directory</h1>
+        <div class="view-options">
+            <button id="gridViewButton" class="view-button">Grid</button>
+            <button id="listViewButton" class="view-button">List</button>
+            <!-- <button id="filterList" aria-label="filter list"></button> -->
+        </div>
+        <section id="memberList" class="grid">
+            
+        </section>
+    </main>
+    <footer>
+        <div class="address">
+            <p class="name">Ankadikely Chamber of Commerce</p>
+            <p>10 Rue Dr Razafimpanilo RN3, Ankadikely</p>
+            <p>Avaradrano, Antananarivo 103, Madagascar</p>
+            <p><a href="mailto:info@ankadikelyCoC.org">info@ankadikelyCoC.org</a></p>
+            <p><a href="tel:+261381234567">+261 34 12 345 67</a></p>
+        </div>
+        <div>
+            <nav class="socials">
+                <div class="socials-site facebook"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="30" height="30"></a></div>
+                <div class="socials-site instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Logo Icon" width="30" height="30"></a></div>
+                <div class="socials-site linkedin"><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="30" height="30"></a></div>
+            </nav>
+        </div>
+        <div class="info">
+            <p>WDD 231 — Frontend Development I — Chamber Project</p>
+            <p>Andrianarivo Andy</p>
+            <p>&copy; Ankadikely Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

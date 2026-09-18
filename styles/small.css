@@ -259,5 +259,5 @@ footer p {
 #myAge {
     font-style: italic;
     cursor: help;
-    text-decoration: dashed 1px #aaa;
+    text-decoration: underline dashed;
 }

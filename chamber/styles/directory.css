@@ -1,0 +1,126 @@
+/* 
+    DIRECTORY PAGE STYLES 
+*/
+
+.view-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.view-options button {
+    padding: 10px 1rem;
+    appearance: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    transition: ease 300ms;
+    box-shadow: 1px 1px 5px #aaa;
+}
+
+.view-options button:hover {
+    background-color: var(--accent-color);
+}
+
+/* #filterList {
+    justify-self: end;
+} */
+
+/* Businesses List Cards */
+#memberList {
+    padding: 1rem;
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+.grid .card {
+    display: block;
+    min-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 1rem 0;
+    box-shadow: 2px 3px 5px #999;
+    overflow: hidden;
+}
+
+.grid .card h2 {
+    display: none;
+}
+
+.grid .small-description {
+    font-size: .8rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.grid .card .hero-logo {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: #fff;
+    width: auto;
+    max-width: 100%;
+    height: 80px;
+}
+
+.grid .card .simple-logo {
+    display: none;
+}
+
+.grid .business-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* List view */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.list .card {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid var(--primary-color);
+    padding: 1rem;
+}
+
+.list .card:last-child {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.list .card:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--primary-color) 20%, transparent 100%);
+}
+
+.list .card .hero-logo {
+    display: none;
+}
+
+.list .card .simple-logo {
+    display: block;
+    float: left;
+}
+
+.list hr {
+    display: none;
+}
+
+.list .business-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

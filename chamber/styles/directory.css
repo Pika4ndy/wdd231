@@ -134,9 +134,10 @@
         min-width: none;
         width: 100%;
     }
-
+    
     .list .card {
         grid-template-columns: 1fr;
         gap: 1rem;
+        text-align: center;
     }
 }

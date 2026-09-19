@@ -38,7 +38,7 @@ h1, h2 {
 }
 
 h1 {
-    margin-left: 10px;
+    text-align: center;
 }
 
 button {
@@ -189,6 +189,15 @@ footer p {
 
 }
 
+.address p, .info p{
+    padding: 10px 0;
+}
+
+.address a {
+    display: block;
+    height: 100%;
+}
+
 /* Socials */
 .socials {
     display: flex;
@@ -201,8 +210,8 @@ footer p {
     display: flex;
     background-color: #ffffff;
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    min-height: 70px;
+    min-width: 70px;
     padding: 4px;
     box-shadow: 1px 1px 10px #eee;
     border: 3px solid #ddd;
@@ -220,4 +229,5 @@ footer p {
     width: 50px;
     height: auto;
     cursor: pointer;
+    aspect-ratio: 1/1;
 }

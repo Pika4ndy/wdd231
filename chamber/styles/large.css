@@ -42,7 +42,7 @@
 
     /* FOOTER */
     footer {
-        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
 }

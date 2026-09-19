@@ -125,6 +125,11 @@
 }
 
 @media screen and (max-width:600px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
     .grid .card {
         min-width: none;
         width: 100%;

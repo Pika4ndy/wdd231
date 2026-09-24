@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-display: swap;
 }
 
 body {
@@ -38,11 +37,41 @@ h1, h2 {
 }
 
 h1 {
-    text-align: center;
+    margin-left: 10px;
 }
 
 button {
     cursor: pointer;
+}
+
+/* Link as button */
+.button-like {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #555;
+    border: 1px solid #999;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 1rem auto;
+    font-family: var(--heading-font);
+}
+
+.button-like.primary {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+.button-like.secondary {
+    background-color: var(--accent-color);
+    color: var(--text-on-secondary);
+}
+
+/* Dark mode button */
+#toggleDarkMode {
+    visibility: hidden;
 }
 
 /* ---------- HEADER ---------- */
@@ -207,7 +236,6 @@ footer p {
 }
 
 .socials-site {
-    display: flex;
     background-color: #ffffff;
     border-radius: 50%;
     min-height: 70px;
@@ -216,12 +244,19 @@ footer p {
     box-shadow: 1px 1px 10px #eee;
     border: 3px solid #ddd;
     transition: ease 300ms;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .socials-site:hover {
     border:3px solid var(--accent-color);
+}
+
+.socials-site a {
+    display: block;
+    width: auto;
+    margin: auto;
+    text-align: center;
 }
 
 .socials-site img {
@@ -230,4 +265,10 @@ footer p {
     height: auto;
     cursor: pointer;
     aspect-ratio: 1/1;
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        text-align: center;
+    }
 }

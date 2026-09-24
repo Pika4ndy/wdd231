@@ -1,0 +1,43 @@
+/* HERO SECTION */
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -30px;
+}
+
+.hero article {
+    position: relative;
+    background-color: var(--secondary-color);
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    top: -50px;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+.hero h2 {
+    text-align: center;
+}
+
+.hero picture {
+    width: 100%;
+    height: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:900px) {
+    main {
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        width: 80%;
+    }
+}

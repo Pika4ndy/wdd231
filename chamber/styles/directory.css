@@ -17,10 +17,15 @@
     border-radius: 3px;
     transition: ease 300ms;
     box-shadow: 1px 1px 5px #aaa;
+    background-color: #eee;
 }
 
 .view-options button:hover {
     background-color: var(--accent-color);
+}
+
+.view-options button img {
+    vertical-align: middle;
 }
 
 /* Businesses List Cards */

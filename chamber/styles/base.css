@@ -26,6 +26,8 @@ header, footer {
 
 main {
     margin: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1, h2, h3, .site-title{
@@ -38,6 +40,10 @@ h1, h2 {
 
 h1 {
     margin-left: 10px;
+}
+
+h2, h3 {
+    margin: 1rem 0;
 }
 
 button {
@@ -72,6 +78,7 @@ button {
 /* Dark mode button */
 #toggleDarkMode {
     visibility: hidden;
+    padding: 5px;
 }
 
 /* ---------- HEADER ---------- */
@@ -189,11 +196,6 @@ header li a:hover {
     color: var(--text-on-secondary);
 }
 
-/* Dark Mode Button */
-#toggleDarkMode {
-    padding: 5px;
-}
-
 /* ---------- FOOTER ---------- */
 footer {
     display: grid;
@@ -254,9 +256,11 @@ footer p {
 
 .socials-site a {
     display: block;
-    width: auto;
+    width: 100%;
+    height: 100%;
     margin: auto;
     text-align: center;
+    border-radius: 50%;
 }
 
 .socials-site img {

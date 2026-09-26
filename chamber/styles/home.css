@@ -1,6 +1,5 @@
 /* HERO SECTION */
 .hero {
-    width: 90%;
     margin: 0 auto;
     margin-bottom: -30px;
 }
@@ -30,12 +29,116 @@
     height: auto;
 }
 
+/* CTA */
+
+/* Events */
+.event {
+    width: 100dvw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    padding: 1rem 3rem;
+}
+
+/* Weather */
+#weather article {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 3px 5px 10px #aaa;
+}
+
+.weather-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-part > * {
+    flex: 2 1 auto;
+}
+
+.weather-part.wind {
+    grid-template-columns: 70px 1fr 1fr;
+}
+
+#weather img {
+    width: 60px;
+    height: auto;
+    flex: 0 1 60px;
+}
+
+#weatherDescription, #windDescription {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-info > * {
+    display: block;
+}
+
+.weather-title {
+    color: #444;
+    font-style: italic;
+}
+
+/* Member Spotlights */
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 1rem;
+}
+
+.spotlights article {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.spotlights article.gold {
+    border: 2px solid #ffd700;
+}
+
+.spotlights article.silver {
+    border: 2px solid #c0c0c0;
+}
+
+.spotlights img {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 2rem 0;
+}
+
+.memberLevel {
+    border-radius: 2rem;
+    padding: 7px 10px;
+    font-family: var(--heading-font);
+}
+
+.memberLevel.gold {
+    background-color: #ffd700;
+}
+
+.memberLevel.silver {
+    background-color: #c0c0c0;
+}
+
 @media screen and (min-width:900px) {
-    main {
-        width: 80%;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
 
     .hero {
         width: 80%;

@@ -56,6 +56,7 @@ button {
     text-decoration: none;
     padding: 10px;
     width: fit-content;
+    height: fit-content;
     border-radius: 5px;
     box-shadow: 3px 3px 5px #555;
     border: 1px solid #999;
@@ -63,6 +64,7 @@ button {
     text-transform: capitalize;
     margin: 1rem auto;
     font-family: var(--heading-font);
+    /* justify-self: center; */
 }
 
 .button-like.primary {

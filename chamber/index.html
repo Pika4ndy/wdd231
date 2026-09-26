@@ -83,9 +83,13 @@
                 <!-- Create a JSON gathering various close events -->
                 <h3>Ankadikely's Annual Festival</h3>
                 <p>
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="./images/festival.webp">
+                        <img src="./images/festival-small.webp" alt="People from Ankadikely celebrating festival" width="600" height="400" loading="lazy">
+                    </picture>
                     Join us for <b>The Ankadikely's Annual Festival</b>, an exciting community celebration bringing together residents, families, and visitors to honor the rich culture, spirit, and heritage of Ankadikely! This year's gathering features a dynamic lineup of local music, traditional dance performances, vibrant artisan craft markets, and interactive activities for all ages. Whether you come to sample delicious local food, enjoy live entertainment, or connect with neighbors and local business owners, the festival promises a memorable experience filled with joy, community pride, and togetherness. Mark your calendar and join the festivities as we celebrate everything that makes Ankadikely such a special place to live, work, and visit!
+                    <a href="./discover.html" class="button-like secondary">Learn More &srarr;</a>
                 </p>
-                <a href="./discover.html" class="button-like secondary">Learn More &srarr;</a>
             </article>
         </section>
 
@@ -96,23 +100,26 @@
                 <span id="weatherToday"></span>
                 <div class="weather-part">
                     <img id="weatherIcon">
-                    <span id="weatherDescription"></span>
+                    <span id="weatherDescription">——</span>
                     <div class="weather-info">
                         <span class="weather-title">Degree</span>
-                        <span id="weatherDegree"></span>
+                        <span id="weatherDegree">——</span>
                     </div>
                     <div class="weather-info">
                         <span class="weather-title">Humidity</span>
-                        <span id="weatherHumidity"></span>
+                        <span id="weatherHumidity">——</span>
                     </div>
                 </div>
                 <div class="weather-part wind">
                     <img src="images/weather/wind.svg" alt="Wind Icon" width="40" height="40">
-                    <span id="windDescription"></span>
+                    <span id="windDescription">——</span>
                     <div class="weather-info">
                         <span class="weather-title">Speed</span>
-                        <span id="windSpeed"></span>
+                        <span id="windSpeed">——</span>
                     </div>
+                </div>
+                <div id="weatherForecast">
+
                 </div>
             </article>
         </section>

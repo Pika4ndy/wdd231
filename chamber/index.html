@@ -15,6 +15,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script type="module" src="scripts/wind-categorization.mjs"></script>
     <script src="scripts/weather.mjs" type="module"></script>
+    <script src="scripts/spotlights-render.js" type="module"></script>
     
     <link rel="icon" href="images/favicon.ico">
 
@@ -82,11 +83,11 @@
             <article class="event">
                 <!-- Create a JSON gathering various close events -->
                 <h3>Ankadikely's Annual Festival</h3>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="./images/festival.webp">
+                    <img src="./images/festival-small.webp" alt="People from Ankadikely celebrating festival" width="600" height="400" loading="lazy">
+                </picture>
                 <p>
-                    <picture>
-                        <source media="(min-width: 900px)" srcset="./images/festival.webp">
-                        <img src="./images/festival-small.webp" alt="People from Ankadikely celebrating festival" width="600" height="400" loading="lazy">
-                    </picture>
                     Join us for <b>The Ankadikely's Annual Festival</b>, an exciting community celebration bringing together residents, families, and visitors to honor the rich culture, spirit, and heritage of Ankadikely! This year's gathering features a dynamic lineup of local music, traditional dance performances, vibrant artisan craft markets, and interactive activities for all ages. Whether you come to sample delicious local food, enjoy live entertainment, or connect with neighbors and local business owners, the festival promises a memorable experience filled with joy, community pride, and togetherness. Mark your calendar and join the festivities as we celebrate everything that makes Ankadikely such a special place to live, work, and visit!
                     <a href="./discover.html" class="button-like secondary">Learn More &srarr;</a>
                 </p>
@@ -119,6 +120,7 @@
                     </div>
                 </div>
                 <div id="weatherForecast">
+                    <!-- Improve by putting a max and min temp throughout the day -->
 
                 </div>
             </article>
@@ -126,53 +128,6 @@
 
         <section class="spotlights">
             <h2>Member Spotlights</h2>
-            <!-- 2 Gold, 1 Silver -->
-            <!-- Silver only get the location of their business -->
-
-            <article class="gold">
-                <span class="memberLevel gold">Gold Member</span>
-                <img src="images/members/artistry.webp" alt="Artistry">
-                <!-- Blocks with some of their categories -->
-                <div class="categories">
-                    <span class="member-category">Health & Retail</span>
-                    <span class="member-category">Eye Exams</span>
-                    <span class="member-category">Contact Lenses</span>
-                </div>
-                <p class="member-tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ut voluptate quibusdam laudantium impedit in doloremque.</p>
-                <!-- Member since -->
-                <!-- Created On -->
-                <!-- Contacts -->
-                <div id="memberInfo">
-                    <div id="memberSince">2000</div>
-                    <div id="creationDate">1990</div>
-                    <div id="contacts">
-                        <span id="address">39 Rue du Commerce, Ankadikely, TX 75012</span>
-                        <span id="mail">hello@visualy.com</span>
-                        <span id="phone">+261 034 23 456 70</span>
-                        <span id="website">https://www.visualy.com</span>
-                    </div>
-                </div>
-            </article>
-            <article class="silver">
-                <span class="memberLevel silver">Silver Member</span>
-                <h3>[Business name]</h3>
-                <!-- Blocks with some of their categories -->
-                <div class="categories">
-                    <span class="member-category">Health & Retail</span>
-                    <span class="member-category">Eye Exams</span>
-                    <span class="member-category">Contact Lenses</span>
-                </div>
-                <p class="member-tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ut voluptate quibusdam laudantium impedit in doloremque.</p>
-                <!-- Member since -->
-                <!-- Created On -->
-                <!-- Contacts -->
-                <div id="memberInfo">
-                    <div id="contacts">
-                        <span id="address">39 Rue du Commerce, Ankadikely, TX 75012</span>
-                        <span id="phone">39 Rue du Commerce, Ankadikely, TX 75012</span>
-                    </div>
-                </div>
-            </article>
         </section>
 
     </main>

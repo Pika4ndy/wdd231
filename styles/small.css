@@ -17,6 +17,7 @@
     --accent-color-alt: #FFD54F;
     --text-on-color: #fff;
     --text-on-alt: #000;
+    --backdrop-color: #00000065;
     --faint-color-border: 1px solid #ddd;
     --heading-font: "Arvo", Cambria, Georgia, 'Times New Roman', serif;
     --body-font: "Lato", Helvetica, Arial, sans-serif;
@@ -27,6 +28,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--body-font);
+}
+
+::backdrop {
+    background: var(--backdrop-color);
 }
 
 h1, h2, h3 {
@@ -204,14 +209,13 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     max-width: 100%;
 }
 
 .buttons-list button {
     display: block;
     text-align: center;
-    /* padding: .5rem 2rem; */
     min-height: 44px;
     font-size: 1.4rem;
     font-weight: 700;
@@ -220,6 +224,7 @@ footer p {
     box-shadow: 1px 1px 5px #ddd;
     cursor: pointer;
     width: 33%;
+    max-width: 300px;
 }
 
 .buttons-list button:hover {
@@ -243,6 +248,11 @@ footer p {
     background-color: var(--primary-color);
     color: var(--text-on-color);
     width: 85%;
+    cursor: pointer;
+}
+
+.course:hover {
+    background-color: var(--secondary-color);
 }
 
 .course.completed::after {
@@ -253,6 +263,62 @@ footer p {
 
 #totalCredits {
     font-weight: 600;
+}
+
+/* Dialog */
+dialog {
+    width: 90%;
+    max-width: 700px;
+    padding: 1.5rem;
+    margin: auto;
+}
+
+dialog #close-dialog {
+    position: absolute;
+    top: 1.3rem;
+    right: 10px;
+    padding: 5px;
+    font-size: 2rem;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+dialog h2 {
+    display: block;
+    width: 96%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--text-on-color);
+    padding: .5rem 0;
+    border-radius: 10px;
+}
+
+dialog h3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+dialog h3.completed::after {
+    content: "\2714";
+    color: var(--secondary-color);
+    margin-left: 5px;
+}
+
+dialog p {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+dialog span, #dialogDescription {
+    font-weight: 400;
+}
+
+#dialogTechnology {
+    font-style: italic;
 }
 
 /* Ids */

@@ -32,7 +32,7 @@
         grid-template-columns: 5fr 3fr;
     }
 
-    h1, .card:last-child:nth-child(even) {
+    h1, .card.last {
         grid-column: 1/-1;
     }
 

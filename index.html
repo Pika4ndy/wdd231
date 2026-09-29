@@ -21,7 +21,8 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/course.mjs" type="module"></script>
+    <script src="scripts/modal.mjs" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,7 @@
         <ul>
             <li class="current"><a href="#">Home</a></li>
             <li><a href="./chamber/index.html">Chamber</a></li>
-            <li><a href="#">Final</a></li>
+            <li><a href="./final/index.html">Final</a></li>
         </ul>
     </nav>
     <main>
@@ -59,7 +60,7 @@
 
         </section>
 
-        <section class="card">
+        <section class="card last">
             <h2>Web Certificate Course</h2>
             <div class="buttons-list">
                 <button id="allCourses">All</button>
@@ -71,6 +72,16 @@
             </article>
             <p>The total(completed) credit for the course listed above is <span id="totalCredits"></span>.</p>
         </section>
+
+        <dialog id="course-dialog">
+            <button id="close-dialog" popovertargetaction="hide">&#x2715;</button>
+            <h2 id="courseName"></h2>
+            <h3 id="courseTitle" class=""></h3>
+            <p><span id="dialogTotalCredits"></span> credits</p>
+            <p>Certicate: <span id="dialogCertificate"></span></p>
+            <p id="dialogDescription"></p>
+            <p>Technology: <span id="dialogTechnology"></span></p>
+        </dialog>
     </main>
     <footer>
         <div class="social">

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankadikely Chamber of Commerce — Join Page</title>
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Home Page:Landing Page showcasing the Chamber and the town">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Ankadikely Chamber of Commerce — Join Page">
+    <meta property="og:description" content="Meet the Ankadikely Chamber of Commerce gathering all the local businesses of Ankadikely">
+    <meta property="og:image" content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp">
+    <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,600&family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo-icon-white.svg" alt="Ankadikely Chamber of Commerce Logo" width="10" height="10"></a>
+        <span class="site-title">Ankadikely Chamber of Commerce</span>
+        <button id="toggleDarkMode" aria-label="toggle dark mode">
+            <img src="images/dark-mode.svg" alt="dark mode button" width="1" height="1">
+        </button>
+        <button class="hamburger-menu" aria-label="navigation"></button>
+            <nav class="" id="navigationMenu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li class="current"><a href="#">Join</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Join Us</h1>
+        <section>
+            <h2>Subscription Form</h2>
+            <form action="thankyou.html" method="get">
+                <span class="form-info"><span class="required">*</span> indicates a required field</span>
+                <fieldset>
+                    <legend>Personal Information</legend>
+    
+                    <label for="first-name">First Name<input type="text" name="first-name" id="first-name" required autocomplete="given-name" title="Enter your first name"></label>
+    
+                    <label for="last-name">Last Name<input type="text" name="last-name" id="last-name" required autocomplete="family-name" title="Enter your last name"></label>
+    
+                    <label for="title">Organization Title<input type="text" name="title" id="title" autocomplete="organization-title" pattern="/^([a-zA-Z\-]|\ ){7,}$/gm" title="Your title in your organization"></label>
+    
+                    <label for="email">Email Address<input type="email" id="email" required autocomplete="email" placeholder="joe-doe@mail.com" title="Enter a valid email address"></label>
+    
+                    <label for="phone">Phone Number<input type="tel" name="phone" id="phone" autocomplete="tel" required title="Enter your phone number"></label>
+    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Organization Information</legend>
+                    <label for="organization-name">Business/Organization Name<input type="text" name="organization-name" id="organization-name" autocomplete="organization" required title="The name of your organization"></label>
+        
+                    <div class="form-radio">
+                        <span class="radio-title">Select your Membership</span>
+
+                        <label for="np-membership"><input type="radio" name="membership-level" id="np-membership" value="np" required>NP Membership (non-profit)</label>
+
+                        <label for="bronze-membership"><input type="radio" name="membership-level" id="bronze-membership" value="bronze">Bronze Membership</label>
+
+                        <label for="silver-membership"><input type="radio" name="membership-level" id="silver-membership" value="silver">Silver Membership</label>
+
+                        <label for="gold-membership"><input type="radio" name="membership-level" id="gold-membership" value="gold">Gold Membership</label>
+                    </div>
+        
+                    <label for="organization-description">Organization Description<textarea name="organization-description" id="organization-description" title="What your organization is about" rows="2" ></textarea></label>
+        
+                </fieldset>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <!-- Contains the date and time the form was loaded -->
+    
+                <input type="submit" value="Become A Member">
+            </form>
+        </section>
+
+        <section class="membership-info">
+            <h2>Membership Information</h2>
+            <article class="card">
+                <h3>Non-profit Membership Level</h3>
+                <button popovertarget="np-information">More Information</button>
+                <dialog id="np-information" popover="auto">
+                    <button class="close-modal" popovertarget="np-information" popovertargetaction="hide">&#10005;</button>
+                    <h4>Non-profit Membership</h4>
+                    <p>
+                        <strong>Benefits include: </strong>
+                        <ul>
+                            <li>Basic Member listing: Name, Address, Phone Number, Basic Category</li>
+                            <li>Access to all Chamber networking mixers, workshops, and community events</li>
+                            <li>Ability to post community announcements and volunteer opportunities</li>
+                            <li>Standard Digital Chamber Member Badge</li>
+                        </ul>
+                    </p>
+                    <p><strong>COST: $100 annual
+                    </strong></p>
+                </dialog>
+            </article>
+
+            <article class="card">
+                <h3>Bronze Membership Level</h3>
+                <button popovertarget="bronze-information">More Information</button>
+                <dialog id="bronze-information" popover="auto">
+                    <button class="close-modal" popovertarget="bronze-information" popovertargetaction="hide">&#10005;</button>
+                    <h4>Bronze Membership</h4>
+                    <p>
+                        <strong>Benefits include: </strong>
+                        <ul>
+                            <li>All non profit benefits included</li>
+                            <li>Standard Member listing: with Logo, website link, social media handles, more specific field subcategories</li>
+                            <li>Access to member-to-member discount and advocacy resources</li>
+                            <li>Subscription to newsletter</li>
+                        </ul>
+                    </p>
+                    <p><strong>COST: $300 annual
+                    </strong></p>
+                </dialog>
+            </article>
+
+            <article class="card">
+                <h3>Silver Membership Level</h3>
+                <button popovertarget="silver-information">More Information</button>
+                <dialog id="silver-information" popover="auto">
+                    <button class="close-modal" popovertarget="silver-information" popovertargetaction="hide">&#10005;</button>
+                    <h4>Silver Membership</h4>
+                    <p>
+                        <strong>Benefits include: </strong>
+                        <ul>
+                            <li>All Bronze benefits included</li>
+                            <li>Member Spotlight Eligibility</li>
+                            <li>Partnership Suggestions</li>
+                            <li>15-20% Sponsoship Discount</li>
+                        </ul>
+                    </p>
+                    <p><strong>COST: $750 annual
+                    </strong></p>
+                </dialog>
+            </article>
+
+            <article class="card">
+                <h3>Gold Membership Level</h3>
+                <button popovertarget="gold-information">More Information</button>
+                <dialog id="gold-information" popover="auto">
+                    <button class="close-modal" popovertarget="gold-information" popovertargetaction="hide">&#10005;</button>
+                    <h4>Gold Membership</h4>
+                    <p>
+                        <strong>Benefits include: </strong>
+                        <ul>
+                            <li>All benefits included</li>
+                            <li>Top Tier Placement</li>
+                            <li>Enhanced Spotlight</li>
+                        </ul>
+                    </p>
+                    <p><strong>COST: $1000 annual
+                    </strong></p>
+                    <p><strong>Best for: </strong></p>
+                </dialog>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="address">
+            <p class="name">Ankadikely Chamber of Commerce</p>
+            <p>10 Rue Dr Razafimpanilo RN3, Ankadikely</p>
+            <p>Avaradrano, Antananarivo 103, Madagascar</p>
+            <p><a href="mailto:info@ankadikelyCoC.org">info@ankadikelyCoC.org</a></p>
+            <p><a href="tel:+261381234567">+261 34 12 345 67</a></p>
+        </div>
+        <div>
+            <nav class="socials">
+                <div class="socials-site facebook"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="50" height="50"></a></div>
+                <div class="socials-site instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Logo Icon" width="50" height="50"></a></div>
+                <div class="socials-site linkedin"><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="50" height="50"></a></div>
+            </nav>
+        </div>
+        <div class="info">
+            <p>WDD 231 — Frontend Development I — Chamber Project</p>
+            <p>Andrianarivo Andy</p>
+            <p>&copy; Ankadikely Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

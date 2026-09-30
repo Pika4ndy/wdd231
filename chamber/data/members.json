@@ -9,7 +9,7 @@
     "logo": "./images/members/artistry-logo.webp",
     "heroImage": "./images/members/artistry.webp",
     "membership": {
-      "level": 3,
+      "level": 1,
       "memberSince": 2012
     },
     "categories": {
@@ -33,7 +33,7 @@
     "logo": "./images/members/grapherz-logo.webp",
     "heroImage": "./images/members/grapherz.webp",
     "membership": {
-      "level": 2,
+      "level": 1,
       "memberSince": 2016
     },
     "categories": {
@@ -57,7 +57,7 @@
     "logo": "./images/members/grapho-logo.webp",
     "heroImage": "./images/members/grapho.webp",
     "membership": {
-      "level": 1,
+      "level": 0,
       "memberSince": 2019
     },
     "categories": {
@@ -201,7 +201,7 @@
     "logo": "./images/members/prelude-logo.webp",
     "heroImage": "./images/members/prelude.webp",
     "membership": {
-      "level": 1,
+      "level": 0,
       "memberSince": 2017
     },
     "categories": {

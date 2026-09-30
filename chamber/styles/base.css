@@ -5,6 +5,9 @@
     --text-color: #1A1A24;
     --text-on-primary: #fff;
     --text-on-secondary: #1A1A24;
+    --backdrop-color: #0005;
+    --invalid: #8e0000;
+    --valid: #008e00;
     --heading-font: "Noto Serif", Cambria, Georgia, 'Times New Roman', serif;
     --body-font: "Google Sans Flex", Helvetica, Arial, sans-serif;
 }
@@ -13,6 +16,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::backdrop {
+    background-color: var(--backdrop-color);
 }
 
 body {

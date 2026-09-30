@@ -1,0 +1,132 @@
+/* Form */
+fieldset {
+    padding: 0 2rem 1rem;
+    margin: 1rem 0;
+}
+
+legend {
+    padding: 0 1rem;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    appearance: none;
+    display: block;
+    padding: .75rem;
+    margin: 5px 0;
+    width: 90%;
+    max-width: 500px;
+    max-height: 6rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+input:required:not(:valid) {
+    border-left: 8px solid var(--invalid);
+}
+
+input:required:valid {
+    border-left: 8px solid var(--valid);
+}
+
+label {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+form label:first-child {
+    margin-top: 0;
+}
+
+label:has(input:required:not([type="radio"]))::before {
+    content: "*";
+    color: #f00;
+    position: absolute;
+    top: 3px;
+    left: -7px;
+}
+
+.form-info {
+    font-style: italic;
+}
+
+.required {
+    color: #f00;
+}
+
+label:has(input[type="radio"]) {
+    margin: 1rem 0;
+}
+
+.form-radio {
+    margin: 1.5rem 0;
+}
+
+input[type="submit"] {
+    padding: .8rem;
+    margin-left: calc(2rem + 1px);
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px #ddd inset;
+    cursor: pointer;
+    border: 1px solid #aaa;
+}
+
+/* Membership Details Card */
+.membership-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: block;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 2rem 0;
+    border: 1px solid #ddd;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card button {
+    padding: 1rem;
+    font-size: large;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.card button:hover {
+    background-color: var(--accent-color);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(75%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

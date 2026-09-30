@@ -1,0 +1,20 @@
+Project Subject:
+    Science Student Resource Hub
+
+Project Description:
+    A website where visitors can look for science formulas, science cheat sheet, explanations,
+    science topics, science's history, exercises + solutions, subject use cases, examples, quizzes, ... quickly
+    and in one single place. It will allows visitors to connect and discuss with other people
+    to either chat, collaborate, solves problems, publish contents, ... they can also save formulas,
+    track topics studied, save quiz results, print formulas.
+
+Project Purpose:
+
+Help visitors to study faster by giving everything in one place
+Allow everyone to study science freely
+Provide Quiz to test knowledge
+
+Project Reason:
+    I love science (especially Physics) and I was inspired to build a site around one that would be helpful
+    to people studying. A place where I can find formulas and explanations easily crossed my mind and I used
+    AI to help develop my idea better. This subject was the most appealing and relevant for this assignment.

@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankadikely Chamber of Commerce — Directory Page</title>
+    <title>Ankadikely Chamber of Commerce — Join Page</title>
     <meta name="author" content="Andrianarivo Andy">
-    <meta name="description" content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Directory Page:list of businesses and organizations belonging to the chamber of commerce">
+    <meta name="description" content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Home Page:Landing Page showcasing the Chamber and the town">
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)">
-
-    <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/join.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/view-display.js" defer></script>
-    <script src="scripts/display-directory.js" defer></script>
-    <meta property="og:type" content="website">
     
     <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="Ankadikely Chamber of Commerce — Directory Page">
-    <meta property="og:description" content="Discover the businesses and organizations of Ankadikely Chamber of Commerce">
+    <meta property="og:title" content="Ankadikely Chamber of Commerce — Join Page">
+    <meta property="og:description" content="Meet the Ankadikely Chamber of Commerce gathering all the local businesses of Ankadikely">
     <meta property="og:image" content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp">
     <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
+    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +28,7 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="images/logo-icon-white.svg" alt="Ankadikely Chamber of Commerce Logo" width="10" height="10"></a>
+        <a href="#"><img src="images/logo-icon-white.svg" alt="Ankadikely Chamber of Commerce Logo" width="10" height="10"></a>
         <span class="site-title">Ankadikely Chamber of Commerce</span>
         <button id="toggleDarkMode" aria-label="toggle dark mode">
             <img src="images/dark-mode.svg" alt="dark mode button" width="1" height="1">
@@ -42,27 +38,14 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./discover.html">Discover</a></li>
-                    <li class="current"><a href="#">Directory</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
                     <li><a href="./join.html">Join</a></li>
                 </ul>
             </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="view-options">
-            <button id="gridViewButton" class="view-button">
-                <img src="images/grid-view.svg" alt="Grid View Icon" width="35" height="35">
-                Grid
-            </button>
-            <button id="listViewButton" class="view-button">
-                <img src="images/list-view.svg" alt="List View Icon" width="35" height="35">
-                List
-            </button>
-            <!-- <button id="filterList" aria-label="filter list"></button> -->
-        </div>
-        <section id="memberList" class="grid">
-            
-        </section>
+        <h1>Thank You</h1>
+
     </main>
     <footer>
         <div class="address">

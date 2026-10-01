@@ -19,8 +19,10 @@ const organizationNameDisplay = document.getElementById("organizationName");
 const membershipLevelDisplay = document.getElementById("membershipLevel");
 const organizationDescriptionDisplay = document.getElementById("organizationDescription");
 
+const filledDay = new Date(timestamp);
+
 function renderReview() {
-    timestampDisplay.textContent = timestamp.toString();
+    timestampDisplay.textContent = filledDay.toUTCString();
     
     fullNameDisplay.textContent = `${lastName}, ${firstName}`;
     titleDisplay.textContent = organizationTitle;

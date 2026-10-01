@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)">
-    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form-completed.js" defer></script>
     
     <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="Ankadikely Chamber of Commerce — Join Page">
+    <meta property="og:title" content="Ankadikely Chamber of Commerce — Thank You Page">
     <meta property="og:description" content="Meet the Ankadikely Chamber of Commerce gathering all the local businesses of Ankadikely">
     <meta property="og:image" content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp">
     <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
@@ -45,8 +46,27 @@
     </header>
     <main>
         <h1>Thank You</h1>
+        <p>Form fully completed on <span id="timestamp"></span>, your information are registered.</p>
 
-    </main>
+            <p>Below are the information you entered:</p>
+            <article>
+                <h2>Personal Information</h2>
+                <p>
+                    <div>Full Name: <span id="fullName"></span><br></div>
+                    <div>Organization Title: <span id="organizationTitle"></span></div>
+                    <div>Email Address: <span id="email"></span></div>
+                    <div>Phone Number: <span id="phone"></span></div>
+                </p>
+            </article>
+            
+            <article>
+                <h2>Subscription Information</h2>
+                <div>Organization Name: <span id="organizationName"></span></div>
+                <div>Membership Level: <span id="membershipLevel"></span></div>
+                <div>Organization Description: <span id="organizationDescription"></span></div>
+            </article>
+
+        </main>
     <footer>
         <div class="address">
             <p class="name">Ankadikely Chamber of Commerce</p>

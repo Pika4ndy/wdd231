@@ -1,0 +1,23 @@
+div:has(span:empty) {
+    /* display: none; */
+}
+
+div {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+div span {
+    font-weight: 400;
+}
+
+article {
+    border: 2px dashed #555;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+#timestamp {
+    font-style: italic;
+}

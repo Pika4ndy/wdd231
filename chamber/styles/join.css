@@ -26,6 +26,10 @@ select {
     border: 1px solid #aaa;
 }
 
+textarea {
+    resize: none;
+}
+
 input[type="radio"] {
     margin-right: 5px;
     border: 1px solid #aaa;
@@ -101,6 +105,7 @@ input[type="submit"] {
     border-radius: 2rem 0;
     border: 1px solid #ddd;
     animation: fadeIn 2s ease-in-out;
+    box-shadow: 5px 5px 10px #aaa;
 }
 
 .card h3 {
@@ -128,5 +133,70 @@ input[type="submit"] {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+dialog {
+    margin: auto;
+    text-align: left;
+    padding: 1.5rem;
+    border: 3px solid ;
+    width: 75%;
+    max-width: 1200px;
+}
+
+dialog .close-modal {
+    position: absolute;
+    font-size: 2rem;
+    top: 1.5rem;
+    right: 1rem;
+    appearance: none;
+    padding: 5px;
+    background-color: #eee;
+}
+
+dialog .close-modal:hover {
+    background-color: #f00;
+}
+
+dialog h4 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    border-bottom: 2px dashed #aaa;
+    color: var(--primary-color);
+}
+
+dialog p {
+    margin: 1rem 0;
+}
+
+dialog p:last-child {
+    font-style: italic;
+}
+
+@media screen and (min-width:900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        gap: 1rem;
+    }
+
+    h1 {
+        grid-column: 1/-1;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .membership-info {
+        justify-content: space-between;
+        height: 90%;
+    }
+    
+    .card {
+        margin: 1rem 0;
     }
 }

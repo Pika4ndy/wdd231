@@ -1,0 +1,56 @@
+main {
+    width: 90%;
+    max-width: 1500px;
+}
+
+.site-name {
+    font-family: var(--heading-font);
+}
+
+/* Fonts */
+.fonts-container {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.font-card {
+    display: block;
+    width: 300px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: transform 250ms ease;
+}
+
+.font-card:hover {
+    box-shadow: 0 0 10px #aaa;
+    transform: scale(1.1);
+}
+
+.font-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 100px;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 10px;
+}
+
+.font-card em {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.font-card p {
+    padding: 1rem;
+}
+
+.libre-baskerville {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}

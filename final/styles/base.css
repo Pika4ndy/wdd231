@@ -1,0 +1,51 @@
+:root {
+    --background-color: #FBFBFB;
+    --text-color: #141414;
+    --primary-color: #14213D;
+    --secondary-color: #000000;
+    --accent-color: #FCA311;
+    --text-on-primary: #fff;
+    --text-on-secondary: #fff;
+    --text-on-accent: #000;
+    --heading-font: "Libre Baskerville", Cambria, Georgia, 'Times New Roman', serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    margin: 1rem 1rem 10px;
+}
+
+header, main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    padding: 1rem;
+}
+
+header h1 {
+    color: var(--text-on-primary);
+}
+

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Final Project — Site Plan</title>
+        <meta name="author" content="Andrianarivo Andy" >
+        <meta name="description" content="Final Project Site Plan" >
+        <link rel="stylesheet" href="styles/base.css" >
+        <link rel="stylesheet" href="styles/site-plan.css" >
+        <link rel="stylesheet" href="styles/wireframe.css" >
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital@0;1&display=swap"
+            rel="stylesheet"
+        >
+        <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>"Eureka" Site Plan</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Website Name</h2>
+                <p>Name: <strong class="site-name">Eureka</strong></p>
+                <p>
+                    Reason: Evokes the "I found it" moment of discovery mostly
+                    used by scientist.
+                </p>
+            </section>
+
+            <section>
+                <h2>Site Purpose</h2>
+                <p>
+                    The site will provide several resources for science students
+                    like formulas, cheat sheets, lessons, tests, resaerch papers
+                    and interactions with other students to help them learn,
+                    practice and improve their knwoledge about science.
+                </p>
+                <p>
+                    It aims at developing people (and specially youth)'s love
+                    for science and promote science knowledge to everyone.
+                </p>
+            </section>
+
+            <section>
+                <h2>Scenarios</h2>
+                <ul>
+                    <li>
+                        What is the formula for calculating kinetic enrgy again?
+                    </li>
+                    <li>
+                        Who founded this field of science or improved it in a
+                        singnificant way?
+                    </li>
+                    <li>What are the most recent discoveries in Chemistry?</li>
+                    <li>
+                        I am learning for an exam, what are the every thing I
+                        should know about Quantum Mechanics?
+                    </li>
+                    <li>
+                        What are random science facts to know for impressing my
+                        friends?
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Fonts</h2>
+                <ul class="fonts-container">
+                    <li class="font-card">
+                        <h3>
+                          Heading Font: <span class="libre-baskerville">Libre Baskerville</span>
+                        </h3>
+                        <p class="libre-baskerville">
+                            The quick brown fox jumps over the lazy dog. <br >
+                            Heading 1 <br >
+                            Subheading
+                        </p>
+                    </li>
+
+                    <li class="font-card">
+                        <h3>
+                          Body Font: <span class="inter">Inter</span>
+                        </h3>
+                          <p class="inter">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Error, dolores non qui eligendi fugit quaerat
+                            consequatur quas eum dolor accusamus.
+                        </p>
+                    </li>
+
+                    <li class="font-card">
+                        <h3>
+                          Algebra Font: \(Computer Modern\)<em > (MathJax Tex native font)</em>
+                        </h3>
+                        <p>
+                            $$x = \frac{-b \pm \sqrt{b^2 - 4 a c} }{2a}$$
+                          $$V = h (\pi r^2)$$
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Wireframes</h2>
+
+                <article class="wireframe">
+                    <h3>Wide Screen View</h3>
+                    <div id="desktop" class="view">
+                        <div class="frame-label">Viewport: ~1440px wide</div>
+                        <div class="desktop-frame">
+                            <!-- NAV -->
+                            <div class="d-nav">
+                                <div class="d-logo">LOGO / SITE NAME</div>
+                                <div class="d-nav-links">
+                                    <span>Topics</span>
+                                    <span>Formula Sheets</span>
+                                    <span>Worked Examples</span>
+                                    <span>Study Tools</span>
+                                    <span>About</span>
+                                </div>
+                                <div class="d-nav-right">
+                                    <div class="d-btn">Log In</div>
+                                    <div class="d-btn solid">Join</div>
+                                </div>
+                            </div>
+
+                            <!-- HERO -->
+                            <div class="d-hero">
+                                <div class="d-hero-title">
+                                    HEADLINE — e.g. "Find the formula. See it
+                                    worked out. Move on."
+                                </div>
+                                <div class="d-hero-sub">
+                                    SUBTEXT — one line on what the site does
+                                </div>
+                                <div class="d-search">
+                                    Search formulas, topics, or worked
+                                    examples...
+                                </div>
+                            </div>
+
+                            <!-- TOPIC GRID -->
+                            <div class="d-section">
+                                <div class="d-section-head">
+                                    <div class="d-section-title">
+                                        BROWSE BY TOPIC
+                                    </div>
+                                    <div class="d-section-link">
+                                        View all topics
+                                    </div>
+                                </div>
+                                <div class="d-grid-6">
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">Mechanics</div>
+                                    </div>
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">Thermodynamics</div>
+                                    </div>
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">Waves & Sound</div>
+                                    </div>
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">
+                                            Electricity & Magnetism
+                                        </div>
+                                    </div>
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">Optics</div>
+                                    </div>
+                                    <div class="topic-card">
+                                        <div class="swatch"></div>
+                                        <div class="label">Modern Physics</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FEATURE / TOOLS STRIP -->
+                            <div class="d-section">
+                                <div class="d-section-head">
+                                    <div class="d-section-title">
+                                        STUDY TOOLS
+                                    </div>
+                                </div>
+                                <div class="d-grid-3">
+                                    <div class="feature-card">
+                                        <div class="feature-icon"></div>
+                                        <div class="feature-title">
+                                            Custom Formula Sheet Builder
+                                        </div>
+                                        <div class="feature-line"></div>
+                                        <div class="feature-line short"></div>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon"></div>
+                                        <div class="feature-title">
+                                            Quick Quiz / Self-Check
+                                        </div>
+                                        <div class="feature-line"></div>
+                                        <div class="feature-line short"></div>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon"></div>
+                                        <div class="feature-title">
+                                            Unit Converter
+                                        </div>
+                                        <div class="feature-line"></div>
+                                        <div class="feature-line short"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WORKED EXAMPLES PREVIEW -->
+                            <div class="d-section">
+                                <div class="d-section-head">
+                                    <div class="d-section-title">
+                                        RECENT / POPULAR WORKED EXAMPLES
+                                    </div>
+                                    <div class="d-section-link">
+                                        Browse all examples
+                                    </div>
+                                </div>
+                                <div class="d-grid-4">
+                                    <div class="example-card">
+                                        <div class="example-top">
+                                            <span>Projectile Motion</span
+                                            ><span class="badge">Medium</span>
+                                        </div>
+                                        <div class="example-body">
+                                            preview / thumbnail
+                                        </div>
+                                    </div>
+                                    <div class="example-card">
+                                        <div class="example-top">
+                                            <span>Ohm's Law Circuit</span
+                                            ><span class="badge">Easy</span>
+                                        </div>
+                                        <div class="example-body">
+                                            preview / thumbnail
+                                        </div>
+                                    </div>
+                                    <div class="example-card">
+                                        <div class="example-top">
+                                            <span>Energy Conservation</span
+                                            ><span class="badge">Hard</span>
+                                        </div>
+                                        <div class="example-body">
+                                            preview / thumbnail
+                                        </div>
+                                    </div>
+                                    <div class="example-card">
+                                        <div class="example-top">
+                                            <span>Wave Interference</span
+                                            ><span class="badge">Medium</span>
+                                        </div>
+                                        <div class="example-body">
+                                            preview / thumbnail
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA / JOIN -->
+                            <div class="d-cta">
+                                <div class="d-cta-title">
+                                    CTA — "Create a free account to save
+                                    formulas and track your progress"
+                                </div>
+                                <div class="d-btn solid">Join for free</div>
+                            </div>
+
+                            <!-- FOOTER -->
+                            <div class="d-footer">
+                                <div class="d-footer-col">
+                                    <div class="d-footer-line"></div>
+                                    <div class="d-footer-line"></div>
+                                    <div class="d-footer-line"></div>
+                                </div>
+                                <div class="d-footer-col">
+                                    <div class="d-footer-line"></div>
+                                    <div class="d-footer-line"></div>
+                                </div>
+                                <div class="d-footer-col">
+                                    <div class="d-footer-line"></div>
+                                    <div class="d-footer-line"></div>
+                                </div>
+                                <div class="d-footer-col">
+                                    <div class="d-footer-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wireframe">
+                    <h3>Mobile View</h3>
+                    <div id="mobile" class="view">
+                        <div class="frame-label">Viewport: ~375px wide</div>
+                        <div class="mobile-wrap">
+                            <div class="mobile-frame">
+                                <!-- TOPBAR -->
+                                <div class="m-topbar">
+                                    <div class="m-logo">LOGO</div>
+                                    <div class="m-burger">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+
+                                <!-- HERO -->
+                                <div class="m-hero">
+                                    <div class="m-hero-title">
+                                        HEADLINE — "Find the formula. See it
+                                        worked out."
+                                    </div>
+                                    <div class="m-hero-sub">
+                                        SUBTEXT — short line
+                                    </div>
+                                    <div class="m-search">
+                                        Search formulas, topics...
+                                    </div>
+                                </div>
+
+                                <!-- TOPIC GRID -->
+                                <div class="m-section">
+                                    <div class="m-section-head">
+                                        <span>BROWSE BY TOPIC</span
+                                        ><span>View all</span>
+                                    </div>
+                                    <div class="m-grid-2">
+                                        <div class="m-topic-card">
+                                            <div class="swatch"></div>
+                                            <div class="label">Mechanics</div>
+                                        </div>
+                                        <div class="m-topic-card">
+                                            <div class="swatch"></div>
+                                            <div class="label">
+                                                Thermodynamics
+                                            </div>
+                                        </div>
+                                        <div class="m-topic-card">
+                                            <div class="swatch"></div>
+                                            <div class="label">
+                                                Waves & Sound
+                                            </div>
+                                        </div>
+                                        <div class="m-topic-card">
+                                            <div class="swatch"></div>
+                                            <div class="label">E&M</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- STUDY TOOLS (horizontal scroll) -->
+                                <div class="m-section">
+                                    <div class="m-section-head">
+                                        <span>STUDY TOOLS</span>
+                                    </div>
+                                    <div class="m-scroll-row">
+                                        <div class="m-feature-card">
+                                            <div class="m-feature-icon"></div>
+                                            <div
+                                                class="label"
+                                                style="font-size: 10.5px"
+                                            >
+                                                Formula Sheet Builder
+                                            </div>
+                                            <div class="m-feature-line"></div>
+                                            <div
+                                                class="m-feature-line short"
+                                            ></div>
+                                        </div>
+                                        <div class="m-feature-card">
+                                            <div class="m-feature-icon"></div>
+                                            <div
+                                                class="label"
+                                                style="font-size: 10.5px"
+                                            >
+                                                Quick Quiz
+                                            </div>
+                                            <div class="m-feature-line"></div>
+                                            <div
+                                                class="m-feature-line short"
+                                            ></div>
+                                        </div>
+                                        <div class="m-feature-card">
+                                            <div class="m-feature-icon"></div>
+                                            <div
+                                                class="label"
+                                                style="font-size: 10.5px"
+                                            >
+                                                Unit Converter
+                                            </div>
+                                            <div class="m-feature-line"></div>
+                                            <div
+                                                class="m-feature-line short"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- WORKED EXAMPLES (stacked) -->
+                                <div class="m-section">
+                                    <div class="m-section-head">
+                                        <span>WORKED EXAMPLES</span
+                                        ><span>Browse all</span>
+                                    </div>
+                                    <div class="m-example-card">
+                                        <div class="m-example-top">
+                                            <span>Projectile Motion</span
+                                            ><span class="badge">Medium</span>
+                                        </div>
+                                        <div class="m-example-body">
+                                            preview
+                                        </div>
+                                    </div>
+                                    <div class="m-example-card">
+                                        <div class="m-example-top">
+                                            <span>Ohm's Law Circuit</span
+                                            ><span class="badge">Easy</span>
+                                        </div>
+                                        <div class="m-example-body">
+                                            preview
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CTA -->
+                                <div class="m-cta">
+                                    <div class="m-cta-title">
+                                        CTA — "Create a free account to save
+                                        your progress"
+                                    </div>
+                                    <div class="btn-sm solid">
+                                        Join for free
+                                    </div>
+                                </div>
+
+                                <!-- FOOTER -->
+                                <div class="m-footer">
+                                    <div class="m-footer-line"></div>
+                                    <div class="m-footer-line"></div>
+                                    <div class="m-footer-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

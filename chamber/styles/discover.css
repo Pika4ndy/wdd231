@@ -98,12 +98,12 @@ ul.amenities {
         object-fit: cover;
         width: 250px;
         transition: all 300ms ease;
+        filter: opacity(.8);
     }
 
     .venues-list img:hover {
-        filter: opacity(.8);
+        filter: opacity(1);
         box-shadow: 5px 0px 5px #aaa;
-        transform: scale(1.1);
         width: 250px;
     }
 }

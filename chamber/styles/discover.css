@@ -15,8 +15,8 @@
     overflow: hidden;
     border-radius: 5px;
     background-color: #eee;
-    grid-template-areas: "name"
-    "photograph"
+    grid-template-areas: "photograph"
+    "name"
     "address"
     "amenities"
     "description"
@@ -36,7 +36,6 @@
 .venues-list h3 {
     margin: 7px 1rem;
     grid-area: name;
-    height: 2.5rem;
 }
 
 .venues-list article address {

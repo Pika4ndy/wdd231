@@ -1,0 +1,108 @@
+.venues-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.venues-list h2 {
+    grid-column: 1/-1;
+}
+
+.venues-list article {
+    display: grid;
+    width: 100%;
+    border: 1.5px solid #555;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #eee;
+    grid-template-areas: "name"
+    "photograph"
+    "address"
+    "amenities"
+    "description"
+    "price"
+    "button";
+}
+
+.venues-list img {
+    width: 100%;
+    height: auto;
+}
+
+.venues-list figure {
+    grid-area: photograph;
+}
+
+.venues-list h3 {
+    margin: 7px 1rem;
+    grid-area: name;
+    height: 2.5rem;
+}
+
+.venues-list article address {
+    margin: 7px 1rem;
+    grid-area: address;
+}
+
+.venues-list .description {
+    margin: 7px 1rem;
+    grid-area: description;
+}
+
+ul.amenities {
+    grid-area: amenities;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px 1rem;
+}
+
+.amenities li {
+    display: block;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.price {
+    grid-area: price;
+    margin: 7px 1rem;
+}
+
+.venues-list article .button-like {
+    width: 80%;
+    margin: 1rem auto;
+    grid-area: button;
+}
+
+/* Medium View Media Query */
+@media screen and (min-width:640px) {
+    .venues-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .venues-list article {
+        grid-template-areas: "photograph name"
+        "photograph address"
+        "photograph amenities"
+        "photograph description"
+        "photograph price"
+        "photograph button"
+        ;
+    }
+
+    .venues-list img {
+        height: 100%;
+        object-fit: cover;
+        width: 250px;
+    }
+}
+
+/* Large View Query */
+@media screen and (min-width:900px) {
+    .venues-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}

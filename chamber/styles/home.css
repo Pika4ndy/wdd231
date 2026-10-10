@@ -33,6 +33,7 @@
 
 /* Events */
 .event {
+    display: grid;
     width: 100dvw;
     position: relative;
     left: 50%;
@@ -42,6 +43,21 @@
     background-color: var(--primary-color);
     color: var(--text-on-primary);
     padding: 1rem 3rem;
+    grid-template-areas: "title"
+    "image"
+    "description";
+}
+
+.event picture {
+    grid-area: image;
+}
+
+.event h3 {
+    grid-area: title;
+}
+
+.event p {
+    grid-area: description;
 }
 
 .event img {
@@ -211,20 +227,7 @@ span.member-category {
     }
 
     .event {
-        display: grid;
         grid-template-areas: "title image"
         "description image";
-    }
-    
-    .event picture {
-        grid-area: image;
-    }
-
-    .event h3 {
-        grid-area: title;
-    }
-
-    .event p {
-        grid-area: description;
     }
 }

@@ -18,7 +18,11 @@ function renderVenues(venuesList) {
         const venueImage = document.createElement("img");
         venueImage.src = venue.photo;
         venueImage.alt = `${venue.name} Photograph`;
-        venueImage.loading = "lazy";
+
+        if (venuesList.indexOf(venue) > 3) {
+            venueImage.loading = "lazy";
+        }
+
         venueImage.width = 300;
         venueImage.height = 200;
 

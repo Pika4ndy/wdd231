@@ -50,8 +50,6 @@
     width: 100%;
     max-width: 800px;
     height: auto;
-    float: right;
-    clear: both;
 }
 
 /* Weather */
@@ -212,7 +210,21 @@ span.member-category {
         width: 80%;
     }
 
-    /* .event {
-        padding: 10%;
-    } */
+    .event {
+        display: grid;
+        grid-template-areas: "title image"
+        "description image";
+    }
+    
+    .event picture {
+        grid-area: image;
+    }
+
+    .event h3 {
+        grid-area: title;
+    }
+
+    .event p {
+        grid-area: description;
+    }
 }

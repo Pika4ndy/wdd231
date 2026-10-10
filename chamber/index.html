@@ -1,42 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankadikely Chamber of Commerce</title>
-    <meta name="author" content="Andrianarivo Andy">
-    <meta name="description" content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Home Page:Landing Page showcasing the Chamber and the town">
-    
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)">
-    <link rel="stylesheet" href="styles/home.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ankadikely Chamber of Commerce</title>
+        <meta name="author" content="Andrianarivo Andy" />
+        <meta
+            name="description"
+            content="WDD 231—Frontend Development I—Andrianarivo Andy;CoC Project—Home Page:Landing Page showcasing the Chamber and the town"
+        />
 
-    <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/wind-categorization.mjs"></script>
-    <script src="scripts/weather.mjs" type="module"></script>
-    <script src="scripts/spotlights-render.js" type="module"></script>
-    
-    <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link
+            rel="stylesheet"
+            href="styles/large.css"
+            media="(min-width: 900px)"
+        />
+        <link rel="stylesheet" href="styles/home.css" />
 
-    <meta property="og:title" content="Ankadikely Chamber of Commerce — Home Page">
-    <meta property="og:description" content="Meet the Ankadikely Chamber of Commerce gathering all the local businesses of Ankadikely">
-    <meta property="og:image" content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp">
-    <meta property="og:url" content="https://pika4ndy.github.io/wdd231/chamber">
-    <meta property="og:type" content="website">
+        <script src="scripts/navigation.js" defer></script>
+        <script type="module" src="scripts/wind-categorization.mjs"></script>
+        <script src="scripts/weather.mjs" type="module"></script>
+        <script src="scripts/spotlights-render.js" type="module"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,600&family=Noto+Serif&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <a href="#"><img src="images/logo-icon-white.svg" alt="Ankadikely Chamber of Commerce Logo" width="10" height="10"></a>
-        <span class="site-title">Ankadikely Chamber of Commerce</span>
-        <button id="toggleDarkMode" aria-label="toggle dark mode">
-            <img src="images/dark-mode.svg" alt="dark mode button" width="1" height="1">
-        </button>
-        <button class="hamburger-menu" aria-label="navigation"></button>
+        <link rel="icon" href="images/favicon.ico" />
+
+        <meta
+            property="og:title"
+            content="Ankadikely Chamber of Commerce — Home Page"
+        />
+        <meta
+            property="og:description"
+            content="Meet the Ankadikely Chamber of Commerce gathering all the local businesses of Ankadikely"
+        />
+        <meta
+            property="og:image"
+            content="https://pika4ndy.github.io/wdd231/chamber/images/web-picture.webp"
+        />
+        <meta
+            property="og:url"
+            content="https://pika4ndy.github.io/wdd231/chamber"
+        />
+        <meta property="og:type" content="website" />
+
+        <link rel="preload" href="fonts/google-sans-flex-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="fonts/google-sans-flex-600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#"
+                ><img
+                    src="images/logo-icon-white.svg"
+                    alt="Ankadikely Chamber of Commerce Logo"
+                    width="44"
+                    height="44"
+            /></a>
+            <span class="site-title">Ankadikely Chamber of Commerce</span>
+            <button id="toggleDarkMode" aria-label="toggle dark mode">
+                <img
+                    src="images/dark-mode.svg"
+                    alt="dark mode button"
+                    width="1"
+                    height="1"
+                />
+            </button>
+            <button class="hamburger-menu" aria-label="navigation"></button>
             <nav class="" id="navigationMenu">
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
@@ -45,114 +77,197 @@
                     <li><a href="./join.html">Join</a></li>
                 </ul>
             </nav>
-    </header>
-    <main>
-        <h1>Home</h1>
+        </header>
+        <main>
+            <h1>Home</h1>
 
-        <section class="hero">
-            <h2>Welcome to the Ankadikely Chamber of Commerce</h2>
-            <picture>
-                <source media="(min-width: 900px)" srcset="./images/hero-large.webp" width="1000" height="667">
-                <img src="images/hero-small.webp" alt="Several people talking around a table showing their hands" width="800" height="800">
-            </picture>
-
-            <article class="over">
-                <p>
-                    The <em>Ankadikely Chamber of Commerce</em> gathers most of the famous local businesses of 
-                    Ankadikely. Members of the Chamber are among the most liked and suggested businesses of the town.
-                    Therefore, either you are visiting or installing in Ankadikely, The Ankadikely Chamber of Commerce
-                    is the best place for you.
-                    <a href="./discover.html" class="button-like primary">Discover events of the town</a>
-                    <a href="./directory.html" class="button-like secondary">Meet our Members</a>
-                </p>
-            </article>
-        </section>
-
-        <section class="CTA">
-            <h2>We welcome everyone!</h2>
-            <!-- Text inspiring to join -->
-            The <b>Ankadikely Chamber of Commerce</b> offers many benefits to its members: promotion among the population, recognition, sponsorship
-            by the Chamber and other companies, special attendace to town's various events, showcase and spotlight and many others ... . So what are you waiting to become a 
-            member of the Chamber?
-
-            <!-- Button over the border linking to the join page -->
-             <a href="./join.html" class="button-like primary">Join Us &srarr;</a>
-        </section>
-
-        <section id="currentEvent">
-            <h2>Actual Event</h2>
-            <article class="event">
-                <!-- Create a JSON gathering various close events -->
-                <h3>Ankadikely's Annual Festival</h3>
+            <section class="hero">
+                <h2>Welcome to the Ankadikely Chamber of Commerce</h2>
                 <picture>
-                    <source media="(min-width: 900px)" srcset="./images/festival.webp">
-                    <img src="./images/festival-small.webp" alt="People from Ankadikely celebrating festival" width="600" height="400" loading="lazy">
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="./images/hero-large.webp"
+                        width="1000"
+                        height="667"
+                    />
+                    <img
+                        src="images/hero-small.webp"
+                        alt="Several people talking around a table showing their hands"
+                        width="800"
+                        height="800"
+                    />
                 </picture>
+
+                <article class="over">
+                    <p>
+                        The <em>Ankadikely Chamber of Commerce</em> gathers most
+                        of the famous local businesses of Ankadikely. Members of
+                        the Chamber are among the most liked and suggested
+                        businesses of the town. Therefore, either you are
+                        visiting or installing in Ankadikely, The Ankadikely
+                        Chamber of Commerce is the best place for you.
+                        <a href="./discover.html" class="button-like primary"
+                            >Discover events of the town</a
+                        >
+                        <a href="./directory.html" class="button-like secondary"
+                            >Meet our Members</a
+                        >
+                    </p>
+                </article>
+            </section>
+
+            <section class="CTA">
+                <h2>We welcome everyone!</h2>
+                <!-- Text inspiring to join -->
+                The <b>Ankadikely Chamber of Commerce</b> offers many benefits
+                to its members: promotion among the population, recognition,
+                sponsorship by the Chamber and other companies, special
+                attendace to town's various events, showcase and spotlight and
+                many others ... . So what are you waiting to become a member of
+                the Chamber?
+
+                <!-- Button over the border linking to the join page -->
+                <a href="./join.html" class="button-like primary"
+                    >Join Us &srarr;</a
+                >
+            </section>
+
+            <section id="currentEvent">
+                <h2>Actual Event</h2>
+                <article class="event">
+                    <!-- Create a JSON gathering various close events -->
+                    <h3>Ankadikely's Annual Festival</h3>
+                    <picture>
+                        <source
+                            media="(min-width: 900px)"
+                            srcset="./images/festival.webp"
+                        />
+                        <img
+                            src="./images/festival-small.webp"
+                            alt="People from Ankadikely celebrating festival"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                        />
+                    </picture>
+                    <p>
+                        Join us for <b>The Ankadikely's Annual Festival</b>, an
+                        exciting community celebration bringing together
+                        residents, families, and visitors to honor the rich
+                        culture, spirit, and heritage of Ankadikely! This year's
+                        gathering features a dynamic lineup of local music,
+                        traditional dance performances, vibrant artisan craft
+                        markets, and interactive activities for all ages.
+                        Whether you come to sample delicious local food, enjoy
+                        live entertainment, or connect with neighbors and local
+                        business owners, the festival promises a memorable
+                        experience filled with joy, community pride, and
+                        togetherness. Mark your calendar and join the
+                        festivities as we celebrate everything that makes
+                        Ankadikely such a special place to live, work, and
+                        visit!
+                        <a href="./discover.html" class="button-like secondary"
+                            >Learn More &srarr;</a
+                        >
+                    </p>
+                </article>
+            </section>
+
+            <section id="weather">
+                <h2>Current Weather in Ankadikely</h2>
+                <article>
+                    <h3>Ankadikely, Antananarivo, MDG</h3>
+                    <span id="weatherToday"></span>
+                    <div class="weather-part">
+                        <img
+                            id="weatherIcon"
+                            src="images/weather/01d.svg"
+                            alt="Weather icon"
+                            width="60"
+                            height="60"
+                        >
+                        <span id="weatherDescription">——</span>
+                        <div class="weather-info">
+                            <span class="weather-title">Degree</span>
+                            <span id="weatherDegree">——</span>
+                        </div>
+                        <div class="weather-info">
+                            <span class="weather-title">Humidity</span>
+                            <span id="weatherHumidity">——</span>
+                        </div>
+                    </div>
+                    <div class="weather-part wind">
+                        <img
+                            src="images/weather/wind.svg"
+                            alt="Wind Icon"
+                            width="40"
+                            height="40"
+                        />
+                        <span id="windDescription">——</span>
+                        <div class="weather-info">
+                            <span class="weather-title">Speed</span>
+                            <span id="windSpeed">——</span>
+                        </div>
+                    </div>
+                    <div id="weatherForecast">
+                        <!-- Improve by putting a max and min temp throughout the day -->
+                    </div>
+                </article>
+            </section>
+
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+            </section>
+        </main>
+        <footer>
+            <div class="address">
+                <p class="name">Ankadikely Chamber of Commerce</p>
+                <p>10 Rue Dr Razafimpanilo RN3, Ankadikely</p>
+                <p>Avaradrano, Antananarivo 103, Madagascar</p>
                 <p>
-                    Join us for <b>The Ankadikely's Annual Festival</b>, an exciting community celebration bringing together residents, families, and visitors to honor the rich culture, spirit, and heritage of Ankadikely! This year's gathering features a dynamic lineup of local music, traditional dance performances, vibrant artisan craft markets, and interactive activities for all ages. Whether you come to sample delicious local food, enjoy live entertainment, or connect with neighbors and local business owners, the festival promises a memorable experience filled with joy, community pride, and togetherness. Mark your calendar and join the festivities as we celebrate everything that makes Ankadikely such a special place to live, work, and visit!
-                    <a href="./discover.html" class="button-like secondary">Learn More &srarr;</a>
+                    <a href="mailto:info@ankadikelyCoC.org"
+                        >info@ankadikelyCoC.org</a
+                    >
                 </p>
-            </article>
-        </section>
-
-        <section id="weather">
-            <h2>Current Weather in Ankadikely</h2>
-            <article>
-                <h3>Ankadikely, Antananarivo, MDG</h3>
-                <span id="weatherToday"></span>
-                <div class="weather-part">
-                    <img id="weatherIcon" src="images/weather/01d.svg" alt="Weather icon">
-                    <span id="weatherDescription">——</span>
-                    <div class="weather-info">
-                        <span class="weather-title">Degree</span>
-                        <span id="weatherDegree">——</span>
+                <p><a href="tel:+261381234567">+261 34 12 345 67</a></p>
+            </div>
+            <div>
+                <nav class="socials">
+                    <div class="socials-site facebook">
+                        <a href="https://www.facebook.com" target="_blank"
+                            ><img
+                                src="images/facebook-icon.svg"
+                                alt="Facebook Logo Icon"
+                                width="50"
+                                height="50"
+                        /></a>
                     </div>
-                    <div class="weather-info">
-                        <span class="weather-title">Humidity</span>
-                        <span id="weatherHumidity">——</span>
+                    <div class="socials-site instagram">
+                        <a href="https://www.instagram.com" target="_blank"
+                            ><img
+                                src="images/instagram-icon.svg"
+                                alt="Instagram Logo Icon"
+                                width="50"
+                                height="50"
+                        /></a>
                     </div>
-                </div>
-                <div class="weather-part wind">
-                    <img src="images/weather/wind.svg" alt="Wind Icon" width="40" height="40">
-                    <span id="windDescription">——</span>
-                    <div class="weather-info">
-                        <span class="weather-title">Speed</span>
-                        <span id="windSpeed">——</span>
+                    <div class="socials-site linkedin">
+                        <a href="https://www.linkedin.com" target="_blank"
+                            ><img
+                                src="images/linkedin-icon.svg"
+                                alt="LinkedIn Logo Icon"
+                                width="50"
+                                height="50"
+                        /></a>
                     </div>
-                </div>
-                <div id="weatherForecast">
-                    <!-- Improve by putting a max and min temp throughout the day -->
-
-                </div>
-            </article>
-        </section>
-
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-        </section>
-
-    </main>
-    <footer>
-        <div class="address">
-            <p class="name">Ankadikely Chamber of Commerce</p>
-            <p>10 Rue Dr Razafimpanilo RN3, Ankadikely</p>
-            <p>Avaradrano, Antananarivo 103, Madagascar</p>
-            <p><a href="mailto:info@ankadikelyCoC.org">info@ankadikelyCoC.org</a></p>
-            <p><a href="tel:+261381234567">+261 34 12 345 67</a></p>
-        </div>
-        <div>
-            <nav class="socials">
-                <div class="socials-site facebook"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="50" height="50"></a></div>
-                <div class="socials-site instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram Logo Icon" width="50" height="50"></a></div>
-                <div class="socials-site linkedin"><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="50" height="50"></a></div>
-            </nav>
-        </div>
-        <div class="info">
-            <p>WDD 231 — Frontend Development I — Chamber Project</p>
-            <p>Andrianarivo Andy</p>
-            <p>&copy; Ankadikely Chamber of Commerce</p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
-</body>
+                </nav>
+            </div>
+            <div class="info">
+                <p>WDD 231 — Frontend Development I — Chamber Project</p>
+                <p>Andrianarivo Andy</p>
+                <p>&copy; Ankadikely Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
 </html>

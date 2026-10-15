@@ -1,0 +1,375 @@
+[
+    {
+        "id": "CM001",
+        "name": "Newton's Second Law of Motion",
+        "topic": "Classical Mechanics",
+        "category": "Dynamics",
+        "latex": "F = m a",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+        "unit": "kg·m/s² (Newton, N)",
+        "variables": {
+            "F": "Net Force (N)",
+            "m": "Mass (kg)",
+            "a": "Acceleration (m/s²)"
+        },
+        "description": "The net force acting on an object equals its mass multiplied by its acceleration. The acceleration has the same direction as the net force and is inversely proportional to the mass of the object.",
+        "author": "Isaac Newton",
+        "date_of_discovery": "1687",
+        "application": "Vehicle crash analysis, rocket launch design, and structural load calculations in civil engineering."
+    },
+    {
+        "id": "CM002",
+        "name": "Kinetic Energy",
+        "topic": "Classical Mechanics",
+        "category": "Work and Energy",
+        "latex": "E_k = \\frac{1}{2} m v^2",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Kinetic_energy",
+        "unit": "Joules (J)",
+        "variables": {
+            "E_k": "Kinetic Energy (J)",
+            "m": "Mass (kg)",
+            "v": "Speed (m/s)"
+        },
+        "description": "The energy an object possesses because of its motion. It equals the work needed to accelerate the object from rest to its current speed, and it grows with the square of the speed.",
+        "author": "Gaspard-Gustave de Coriolis (modern form); Gottfried Leibniz (vis viva precursor)",
+        "date_of_discovery": "1829",
+        "application": "Designing braking systems, evaluating wind turbine output, and assessing impact energy in safety engineering."
+    },
+    {
+        "id": "CM003",
+        "name": "Newton's Law of Universal Gravitation",
+        "topic": "Classical Mechanics",
+        "category": "Gravitation",
+        "latex": "F = G \\frac{m_1 m_2}{r^2}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+        "unit": "kg·m/s² (Newton, N)",
+        "variables": {
+            "F": "Gravitational Force (N)",
+            "G": "Gravitational Constant (m³·kg⁻¹·s⁻²)",
+            "m_1": "Mass of First Body (kg)",
+            "m_2": "Mass of Second Body (kg)",
+            "r": "Distance Between Centers of Mass (m)"
+        },
+        "description": "Every two masses attract each other with a force proportional to the product of their masses and inversely proportional to the square of the distance between their centers.",
+        "author": "Isaac Newton",
+        "date_of_discovery": "1687",
+        "application": "Computing satellite orbits, planning interplanetary missions, and predicting ocean tides."
+    },
+    {
+        "id": "CM004",
+        "name": "Centripetal Force",
+        "topic": "Classical Mechanics",
+        "category": "Circular Motion",
+        "latex": "F_c = \\frac{m v^2}{r}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Centripetal_force",
+        "unit": "kg·m/s² (Newton, N)",
+        "variables": {
+            "F_c": "Centripetal Force (N)",
+            "m": "Mass (kg)",
+            "v": "Tangential Speed (m/s)",
+            "r": "Radius of the Circular Path (m)"
+        },
+        "description": "The inward force required to keep an object moving along a circular path. It points toward the center of the circle and increases with the square of the speed.",
+        "author": "Christiaan Huygens",
+        "date_of_discovery": "1659",
+        "application": "Banked road and railway curve design, centrifuge engineering, and amusement park ride safety."
+    },
+    {
+        "id": "TS001",
+        "name": "Ideal Gas Law",
+        "topic": "Thermodynamics & Statistical Mechanics",
+        "category": "Gas Laws",
+        "latex": "P V = n R T",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Ideal_gas_law",
+        "unit": "Pascal (Pa) when solving for pressure",
+        "variables": {
+            "P": "Pressure (Pa)",
+            "V": "Volume (m³)",
+            "n": "Amount of Substance (mol)",
+            "R": "Ideal Gas Constant (J·mol⁻¹·K⁻¹)",
+            "T": "Absolute Temperature (K)"
+        },
+        "description": "An equation of state relating the pressure, volume, temperature, and amount of an ideal gas. It combines Boyle's, Charles's, and Avogadro's laws and approximates real gases well at low pressure and high temperature.",
+        "author": "Émile Clapeyron",
+        "date_of_discovery": "1834",
+        "application": "Engine and compressor design, weather balloon calculations, and chemical process engineering."
+    },
+    {
+        "id": "TS002",
+        "name": "Boltzmann's Entropy Formula",
+        "topic": "Thermodynamics & Statistical Mechanics",
+        "category": "Statistical Mechanics",
+        "latex": "S = k_B \\ln W",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Boltzmann%27s_entropy_formula",
+        "unit": "J/K (Joules per Kelvin)",
+        "variables": {
+            "S": "Entropy (J/K)",
+            "k_B": "Boltzmann Constant (J/K)",
+            "W": "Number of Microstates (dimensionless)"
+        },
+        "description": "Connects the macroscopic entropy of a system to the number of microscopic arrangements (microstates) that correspond to the same macroscopic state. More microstates mean higher entropy.",
+        "author": "Ludwig Boltzmann (formulation later given by Max Planck)",
+        "date_of_discovery": "1877",
+        "application": "Information theory, materials science, and understanding the direction of spontaneous processes and heat engine limits."
+    },
+    {
+        "id": "TS003",
+        "name": "First Law of Thermodynamics",
+        "topic": "Thermodynamics & Statistical Mechanics",
+        "category": "Energy Conservation",
+        "latex": "\\Delta U = Q - W",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+        "unit": "Joules (J)",
+        "variables": {
+            "\\Delta U": "Change in Internal Energy (J)",
+            "Q": "Heat Added to the System (J)",
+            "W": "Work Done by the System (J)"
+        },
+        "description": "Energy is conserved: the change in internal energy of a closed system equals the heat added to it minus the work it does on its surroundings.",
+        "author": "Rudolf Clausius, William Rankine, and others",
+        "date_of_discovery": "c. 1850",
+        "application": "Power plant analysis, refrigeration and heat pump design, and internal combustion engine cycles."
+    },
+    {
+        "id": "TS004",
+        "name": "Stefan–Boltzmann Law",
+        "topic": "Thermodynamics & Statistical Mechanics",
+        "category": "Thermal Radiation",
+        "latex": "j^{\\star} = \\sigma T^4",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law",
+        "unit": "W/m² (Watts per square meter)",
+        "variables": {
+            "j^{\\star}": "Radiant Exitance of a Black Body (W/m²)",
+            "\\sigma": "Stefan–Boltzmann Constant (W·m⁻²·K⁻⁴)",
+            "T": "Absolute Temperature (K)"
+        },
+        "description": "The total energy radiated per unit surface area of a black body per unit time is proportional to the fourth power of its absolute temperature.",
+        "author": "Josef Stefan (empirical, 1879); Ludwig Boltzmann (theoretical derivation, 1884)",
+        "date_of_discovery": "1879",
+        "application": "Estimating stellar temperatures and luminosities, thermal imaging, and designing furnaces and spacecraft thermal control."
+    },
+    {
+        "id": "WO001",
+        "name": "Snell's Law of Refraction",
+        "topic": "Waves & Optics",
+        "category": "Geometric Optics",
+        "latex": "n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Snell%27s_law",
+        "unit": "rad (angle of refraction, dimensionless)",
+        "variables": {
+            "n_1": "Refractive Index of First Medium (dimensionless)",
+            "\\theta_1": "Angle of Incidence (rad)",
+            "n_2": "Refractive Index of Second Medium (dimensionless)",
+            "\\theta_2": "Angle of Refraction (rad)"
+        },
+        "description": "Describes how light bends when passing between two media with different refractive indices. The product of the refractive index and the sine of the angle to the normal is the same on both sides of the boundary.",
+        "author": "Ibn Sahl (first described); Willebrord Snellius and René Descartes (rediscovered)",
+        "date_of_discovery": "984 (Ibn Sahl); 1621 (Snellius)",
+        "application": "Lens and eyeglass design, fiber optic communication, and underwater imaging."
+    },
+    {
+        "id": "WO002",
+        "name": "Doppler Effect (Sound)",
+        "topic": "Waves & Optics",
+        "category": "Wave Phenomena",
+        "latex": "f' = f \\frac{v + v_r}{v + v_s}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Doppler_effect",
+        "unit": "Hertz (Hz)",
+        "variables": {
+            "f'": "Observed Frequency (Hz)",
+            "f": "Emitted Frequency (Hz)",
+            "v": "Speed of Waves in the Medium (m/s)",
+            "v_r": "Speed of Receiver Toward the Source (m/s)",
+            "v_s": "Speed of Source Away From the Receiver (m/s)"
+        },
+        "description": "The observed frequency of a wave changes when the source and the observer move relative to each other. Approaching sources raise the observed frequency, while receding sources lower it.",
+        "author": "Christian Doppler",
+        "date_of_discovery": "1842",
+        "application": "Radar speed guns, medical Doppler ultrasound for blood flow, and measuring the redshift of galaxies."
+    },
+    {
+        "id": "WO003",
+        "name": "Young's Double-Slit Interference Condition",
+        "topic": "Waves & Optics",
+        "category": "Interference",
+        "latex": "d \\sin\\theta = m \\lambda",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Double-slit_experiment",
+        "unit": "m (Meters, when solving for wavelength or slit spacing)",
+        "variables": {
+            "d": "Slit Separation (m)",
+            "\\theta": "Angle to the Bright Fringe (rad)",
+            "m": "Order of the Fringe (dimensionless integer)",
+            "\\lambda": "Wavelength of Light (m)"
+        },
+        "description": "Gives the angles at which light passing through two narrow slits interferes constructively, producing bright fringes. It demonstrates the wave nature of light.",
+        "author": "Thomas Young",
+        "date_of_discovery": "1801",
+        "application": "Measuring wavelengths of light, diffraction grating spectrometers, and precision interferometry."
+    },
+    {
+        "id": "WO004",
+        "name": "Malus's Law",
+        "topic": "Waves & Optics",
+        "category": "Polarization",
+        "latex": "I = I_0 \\cos^2\\theta",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Polarizer#Malus's_law_and_other_properties",
+        "unit": "W/m² (Watts per square meter)",
+        "variables": {
+            "I": "Transmitted Intensity (W/m²)",
+            "I_0": "Incident Polarized Intensity (W/m²)",
+            "\\theta": "Angle Between Light Polarization and Analyzer Axis (rad)"
+        },
+        "description": "Gives the intensity of polarized light after it passes through a polarizing filter (analyzer). The transmitted intensity varies with the square of the cosine of the angle between the polarization direction and the filter axis.",
+        "author": "Étienne-Louis Malus",
+        "date_of_discovery": "1809",
+        "application": "LCD displays, polarized sunglasses, camera filters, and photoelastic stress analysis."
+    },
+    {
+        "id": "EM001",
+        "name": "Coulomb's Law",
+        "topic": "Electromagnetism",
+        "category": "Electrostatics",
+        "latex": "F = k_e \\frac{|q_1 q_2|}{r^2}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Coulomb%27s_law",
+        "unit": "kg·m/s² (Newton, N)",
+        "variables": {
+            "F": "Electrostatic Force (N)",
+            "k_e": "Coulomb Constant (N·m²·C⁻²)",
+            "q_1": "First Point Charge (C)",
+            "q_2": "Second Point Charge (C)",
+            "r": "Distance Between the Charges (m)"
+        },
+        "description": "The electrostatic force between two point charges is proportional to the product of their charges and inversely proportional to the square of their separation. Like charges repel and opposite charges attract.",
+        "author": "Charles-Augustin de Coulomb",
+        "date_of_discovery": "1785",
+        "application": "Designing capacitors and electrostatic precipitators, laser printers, and modeling atomic and molecular forces."
+    },
+    {
+        "id": "EM002",
+        "name": "Ohm's Law",
+        "topic": "Electromagnetism",
+        "category": "Circuits",
+        "latex": "V = I R",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "unit": "Volts (V)",
+        "variables": {
+            "V": "Voltage (V)",
+            "I": "Current (A)",
+            "R": "Resistance (Ω)"
+        },
+        "description": "The current through a conductor between two points is directly proportional to the voltage across them and inversely proportional to the resistance, for ohmic materials at constant temperature.",
+        "author": "Georg Simon Ohm",
+        "date_of_discovery": "1827",
+        "application": "Electronic circuit design, selecting resistors, and sizing wiring and fuses in electrical systems."
+    },
+    {
+        "id": "EM003",
+        "name": "Faraday's Law of Induction",
+        "topic": "Electromagnetism",
+        "category": "Electromagnetic Induction",
+        "latex": "\\varepsilon = -\\frac{d\\Phi_B}{dt}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction",
+        "unit": "Volts (V)",
+        "variables": {
+            "\\varepsilon": "Induced Electromotive Force (V)",
+            "\\Phi_B": "Magnetic Flux (Wb)",
+            "t": "Time (s)"
+        },
+        "description": "A changing magnetic flux through a circuit induces an electromotive force. The negative sign (Lenz's law) shows that the induced EMF opposes the change in flux that produced it.",
+        "author": "Michael Faraday (experimental); Joseph Henry (independent discovery)",
+        "date_of_discovery": "1831",
+        "application": "Electric generators, transformers, induction cooktops, and wireless charging."
+    },
+    {
+        "id": "EM004",
+        "name": "Lorentz Force Law",
+        "topic": "Electromagnetism",
+        "category": "Electrodynamics",
+        "latex": "\\vec{F} = q\\left(\\vec{E} + \\vec{v} \\times \\vec{B}\\right)",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Lorentz_force",
+        "unit": "kg·m/s² (Newton, N)",
+        "variables": {
+            "\\vec{F}": "Total Electromagnetic Force (N)",
+            "q": "Electric Charge (C)",
+            "\\vec{E}": "Electric Field (V/m)",
+            "\\vec{v}": "Velocity of the Charge (m/s)",
+            "\\vec{B}": "Magnetic Field (T)"
+        },
+        "description": "The force on a charged particle moving through electric and magnetic fields. The electric part acts along the field, while the magnetic part acts perpendicular to both the velocity and the magnetic field.",
+        "author": "Hendrik Antoon Lorentz (building on work by Oliver Heaviside and J.J. Thomson)",
+        "date_of_discovery": "1895",
+        "application": "Particle accelerators, mass spectrometers, electric motors, and plasma confinement in fusion reactors."
+    },
+    {
+        "id": "MP001",
+        "name": "Mass–Energy Equivalence",
+        "topic": "Modern Physics",
+        "category": "Special Relativity",
+        "latex": "E = m c^2",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence",
+        "unit": "Joules (J)",
+        "variables": {
+            "E": "Rest Energy (J)",
+            "m": "Rest Mass (kg)",
+            "c": "Speed of Light in Vacuum (m/s)"
+        },
+        "description": "States that mass and energy are equivalent: a body at rest possesses an energy proportional to its mass, scaled by the square of the speed of light.",
+        "author": "Albert Einstein",
+        "date_of_discovery": "1905",
+        "application": "Nuclear power and weapons, particle physics, and PET scan imaging through matter–antimatter annihilation."
+    },
+    {
+        "id": "MP002",
+        "name": "Planck–Einstein Relation",
+        "topic": "Modern Physics",
+        "category": "Quantum Mechanics",
+        "latex": "E = h f",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Planck%E2%80%93Einstein_relation",
+        "unit": "Joules (J)",
+        "variables": {
+            "E": "Photon Energy (J)",
+            "h": "Planck Constant (J·s)",
+            "f": "Frequency (Hz)"
+        },
+        "description": "The energy of a photon is directly proportional to the frequency of the electromagnetic radiation. It established that light and other energy exchanges are quantized.",
+        "author": "Max Planck (1900); Albert Einstein (1905, photoelectric effect)",
+        "date_of_discovery": "1900",
+        "application": "Solar cells, photodetectors, lasers, and spectroscopy."
+    },
+    {
+        "id": "MP003",
+        "name": "de Broglie Wavelength",
+        "topic": "Modern Physics",
+        "category": "Wave–Particle Duality",
+        "latex": "\\lambda = \\frac{h}{p}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Matter_wave",
+        "unit": "Meters (m)",
+        "variables": {
+            "\\lambda": "de Broglie Wavelength (m)",
+            "h": "Planck Constant (J·s)",
+            "p": "Momentum (kg·m/s)"
+        },
+        "description": "Every moving particle has an associated wavelength inversely proportional to its momentum. This extends the wave–particle duality of light to matter such as electrons.",
+        "author": "Louis de Broglie",
+        "date_of_discovery": "1924",
+        "application": "Electron microscopy, neutron diffraction for studying crystal structures, and electron beam lithography."
+    },
+    {
+        "id": "MP004",
+        "name": "Heisenberg Uncertainty Principle",
+        "topic": "Modern Physics",
+        "category": "Quantum Mechanics",
+        "latex": "\\Delta x \\, \\Delta p \\geq \\frac{\\hbar}{2}",
+        "wikipedia_link": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+        "unit": "kg·m²/s (J·s, lower bound of the product)",
+        "variables": {
+            "\\Delta x": "Uncertainty in Position (m)",
+            "\\Delta p": "Uncertainty in Momentum (kg·m/s)",
+            "\\hbar": "Reduced Planck Constant (J·s)"
+        },
+        "description": "There is a fundamental limit to how precisely the position and momentum of a particle can be known at the same time. The more precisely one is determined, the less precisely the other can be.",
+        "author": "Werner Heisenberg (1927); Earle Kennard (1927, exact inequality)",
+        "date_of_discovery": "1927",
+        "application": "Explaining atomic stability, quantum tunneling in scanning tunneling microscopes, and limits of precision measurement."
+    }
+]

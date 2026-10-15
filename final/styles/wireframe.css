@@ -7,6 +7,11 @@
     --text-soft:#6b6b6b;
     --mono: "Courier New", monospace;
   }
+
+  header {
+    display: block;
+  }
+
   .wireframes {
     margin:0; padding:0;
     background:#e8e8e8;

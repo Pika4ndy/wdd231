@@ -3,7 +3,7 @@ const apiUrl = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/?api_key=yGo5s
 const apodImage = document.getElementById("APOD");
 const apodImageContainer = document.querySelector(".hero-image");
 
-const tooltipTitle = document.querySelector(".tooltip-content h4");
+const tooltipTitle = document.querySelector(".tooltip-content h3");
 const tooltipCredit = document.querySelector(".tooltip-content p");
 
 async function fetchAPOD() {
@@ -11,8 +11,9 @@ async function fetchAPOD() {
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
-            throw new Error(response.status);
+            console.log(response.status);
             
+            throw new Error(response.status);
         }
 
         const data = await response.json();
@@ -31,6 +32,7 @@ function displayImage(APODdata) {
     apodImage.src = APODdata.hdurl;
     apodImage.alt = APODdata.alt;
     apodImage.loading = "lazy";
+    
 
     tooltipTitle.innerHTML = `APOD: <a href="${APODdata.permalink}" target="_blank">${APODdata.title}</a>`;
     tooltipCredit.innerHTML = `Credit: ${APODdata.credit}`;

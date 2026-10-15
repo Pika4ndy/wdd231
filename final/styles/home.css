@@ -9,7 +9,6 @@
 .hero-image {
     position: relative;
     height: 600px;
-    background-color: #e8e8e8;
 }
 
 #APOD {
@@ -109,7 +108,8 @@
 }
 
 /* Typography inside the tooltip */
-.tooltip-content h4 {
+.tooltip-content h3 {
+    color: inherit;
     margin: 0 0 0.5rem 0;
     font-size: 0.95rem;
     font-weight: 600;
@@ -126,6 +126,11 @@
 .tooltip-content a {
     color: inherit;
     text-decoration: underline;
+}
+
+.tooltip-content a::before {
+    visibility: hidden;
+    display: none;
 }
 
 /* Reveal tooltip on hover AND keyboard focus (Accessibility) */

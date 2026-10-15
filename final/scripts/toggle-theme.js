@@ -30,5 +30,3 @@ function toggleTheme(dark) {
         isDarkMode = false;
     }
 }
-
-toggleTheme(true);

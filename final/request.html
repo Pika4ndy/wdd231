@@ -1,50 +1,54 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Eureka — *Template* Page</title>
-        <meta name="author" content="Andrianarivo Andy" />
+        <meta name="author" content="Andrianarivo Andy" >
         <meta
             name="description"
             content="Eureka Science Student Resource Hub"
-        />
+        >
 
-        <link rel="icon" href="images/favicon.ico" />
+        <link rel="icon" href="images/favicon.ico" >
 
-        <meta property="og:title" content="Eureka Resource Hub" />
+        <meta property="og:title" content="Eureka Resource Hub" >
         <meta
             property="og:description"
             content="Eureka Resource Hub Home Page — Browse among many formulas to learn and study"
-        />
+        >
         <meta
             property="og:image"
             content="https://pika4ndy.github.io/wdd231/final/images/og-image.webp"
-        />
+        >
         <meta
             property="og:url"
             content="https://pika4ndy.github.io/wdd231/final/index.html"
-        />
-        <meta property="og:type" content="Website" />
+        >
+        <meta property="og:type" content="Website" >
 
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/normalize.css" >
+        <link rel="stylesheet" href="styles/base.css" >
         <link
             rel="stylesheet"
             href="styles/medium.css"
             media="(min-width:600px) and (max-width:999px)"
-        />
+        >
         <link
             rel="stylesheet"
             href="styles/large.css"
             media="(min-width:1000px)"
-        />
+        >
 
-        <link rel="stylesheet" href="styles/home.css" />
+        <link rel="stylesheet" href="styles/home.css" >
 
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <script src="scripts/toggle-theme.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -54,7 +58,7 @@
                     alt="Eureka Resource Hub Logo"
                     width="60"
                     height="60"
-            /></a>
+            ></a>
             <span class="site-name">
                 <a href="#">Eureka</a>
             </span>
@@ -67,7 +71,7 @@
                         <a href="./formulas.html">Formulas</a>
                     </li>
                     <li>
-                        <a href="./join.html">Join Us</a>
+                        <a href="./request.html">Request a Topic</a>
                     </li>
                     <!-- Insert Topics browsing -->
                 </ul>
@@ -83,14 +87,14 @@
                     alt="Light Mode Active"
                     width="40"
                     height="40"
-                />
+                >
                 <img
                     id="dark-icon"
                     src="images/dark-icon.svg"
                     alt="Light Mode Active"
                     width="40"
                     height="40"
-                />
+                >
             </button>
             <button
                 id="hamburger"
@@ -101,7 +105,22 @@
             </button>
         </header>
         <main>
-            <h1></h1>
+            <h1>request a Topic / Write a Feedback</h1>
+
+            <section>
+                <h2>Tell Us What to Add Next</h2>
+                <form action="./form-action.html">
+                    <p class="info"><span class="required">*</span> indicates a required field</p>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label>First Name:<input type="text" id="first-name" name="first-name" autocomplete="given-name" required></label>
+                        <label>Last Name:<input type="text" id="last-name" name="last-name" autocomplete="family-name" required></label>
+                        <label>Last Name:<input type="text" id="last-name" name="last-name" autocomplete="family-name"></label>
+                    </fieldset>
+                </form>
+            </section>
+
         </main>
 
         <footer>
@@ -116,7 +135,7 @@
                             <a href="./formulas.html">Formulas</a>
                         </li>
                         <li>
-                            <a href="./join.html">Join Us</a>
+                            <a href="./request.html">Request a Topic</a>
                         </li>
                     </ul>
                 </div>

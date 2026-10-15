@@ -126,6 +126,7 @@
 .tooltip-content a {
     color: inherit;
     text-decoration: underline;
+    display: none;
 }
 
 .tooltip-content a::before {
@@ -140,6 +141,10 @@
     visibility: visible;
     transform: translateY(0);
     pointer-events: auto;
+
+    & a {
+        display: inline-block;
+    }
 }
 
 /* About Formula Section */

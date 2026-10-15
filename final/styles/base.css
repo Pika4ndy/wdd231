@@ -40,6 +40,7 @@
     --modern: #F08DC1;
     --footer-background: #000;
     --footer-text: #fff;
+    --faint: #333;
 }
 
 @font-face {
@@ -170,8 +171,9 @@ header {
     width: 100%;
 }
 
-header img {
+header svg {
     display: block;
+    color: var(--secondary-color);
 }
 
 header .site-name {
@@ -307,7 +309,7 @@ footer a[aria-current="page"] {
     grid-template-rows: 1fr;
     place-items: center;
     border: 1px solid var(--primary-color);
-    background-color: #f4f4f4;
+    background-color: transparent;
     cursor: pointer;
     transition: background 300ms ease;
 }

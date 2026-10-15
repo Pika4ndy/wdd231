@@ -1,97 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Homepage - Frontend Development</title>
-    <meta name="author" content="Andrianarivo Andy">
-    <meta name="description" content="WDD 231 — Frontend Development I — Andrianarivo Andy: Homepage for the course">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WDD 231 - Homepage - Frontend Development</title>
+        <meta name="author" content="Andrianarivo Andy" />
+        <meta
+            name="description"
+            content="WDD 231 — Frontend Development I — Andrianarivo Andy: Homepage for the course"
+        />
 
-    <!-- Social media meta tags -->
-    <meta property="og:title" content="WDD 231 Course Homepage by Andrianarivo Andy">
-    <meta property="og:description" content="The website that hosts my courses assignments and projects for the Frontend Development I Course ">
-    <meta property="og:image" content="https://img.magnific.com/premium-photo/computer-screen-with-word-ready-it_853231-62.jpg?semt=ais_hybrid&w=740&q=80">
-    <meta property="og:url" content="https://pika4ndy.github.io/wdd231/">
-    
-    <link rel="icon" href="images/favicon.ico">
+        <!-- Social media meta tags -->
+        <meta
+            property="og:title"
+            content="WDD 231 Course Homepage by Andrianarivo Andy"
+        />
+        <meta
+            property="og:description"
+            content="The website that hosts my courses assignments and projects for the Frontend Development I Course "
+        />
+        <meta
+            property="og:image"
+            content="https://img.magnific.com/premium-photo/computer-screen-with-word-ready-it_853231-62.jpg?semt=ais_hybrid&w=740&q=80"
+        />
+        <meta property="og:url" content="https://pika4ndy.github.io/wdd231/" />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="images/favicon.ico" />
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.mjs" type="module"></script>
-    <script src="scripts/modal.mjs" type="module"></script>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/large.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <a href="#"><img src="images/logo.svg" alt="Home logo" width="1" height="1"></a>
-        <span>WDD 231 — Frontend Development</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-    </header>
-    <nav class="nav-menu">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="./chamber/index.html">Chamber</a></li>
-            <li><a href="./final/index.html">Final</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Home</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                My name is <strong>Andrianarivo Andy</strong>. I am currently <span id="myAge" title="Updates dynamically"></span>.
-                I live in Ankadikely Ilafy in the Antananarivo province in Madagascar. I have been blessed of being the eldest sibling in a family of 7. I have got 2 sisters and 2 brothers, and I deeply cherish them. <br>
-                I am currently a student and I am planning a career in Physics because I am really fond of Physics and Mathematics.
-                The most important thing I have learnt in my life so far is: <strong>God loves us</strong> and <strong>love your fellow</strong>. Turn into God, always.
-            </p>
-        </section>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.mjs" type="module"></script>
+        <script src="scripts/modal.mjs" type="module"></script>
 
-        <section class="card">
-            <h2>Student Photo</h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="#"
+                ><img
+                    src="images/logo.svg"
+                    alt="Home logo"
+                    width="1"
+                    height="1"
+            /></a>
+            <span>WDD 231 — Frontend Development</span>
+            <button
+                id="nav-button"
+                class="hamburger"
+                aria-label="navigation"
+            ></button>
+        </header>
+        <nav class="nav-menu">
+            <ul>
+                <li class="current"><a href="./index.html">Home</a></li>
+                <li><a href="./chamber/index.html">Chamber</a></li>
+                <li><a href="./final/index.html">Final</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    My name is <strong>Andrianarivo Andy</strong>. I am
+                    currently
+                    <span id="myAge" title="Updates dynamically"></span>. I live
+                    in Ankadikely Ilafy in the Antananarivo province in
+                    Madagascar. I have been blessed of being the eldest sibling
+                    in a family of 7. I have got 2 sisters and 2 brothers, and I
+                    deeply cherish them. <br />
+                    I am currently a student and I am planning a career in
+                    Physics because I am really fond of Physics and Mathematics.
+                    The most important thing I have learnt in my life so far is:
+                    <strong>God loves us</strong> and
+                    <strong>love your fellow</strong>. Turn into God, always.
+                </p>
+            </section>
 
-                <picture class="image-container"><img src="images/andrianarivo-andy.webp" alt="A picture of myself" class="myself" width="300" height="300"></picture>
+            <section class="card">
+                <h2>Student Photo</h2>
 
-        </section>
+                <picture class="image-container"
+                    ><img
+                        src="images/andrianarivo-andy.webp"
+                        alt="A picture of myself"
+                        class="myself"
+                        width="300"
+                        height="300"
+                /></picture>
+            </section>
 
-        <section class="card last">
-            <h2>Web Certificate Course</h2>
-            <div class="buttons-list">
-                <button id="allCourses">All</button>
-                <button id="wddCourses">WDD</button>
-                <button id="cseCourses">CSE</button>
+            <section class="card last">
+                <h2>Web Certificate Course</h2>
+                <div class="buttons-list">
+                    <button id="allCourses">All</button>
+                    <button id="wddCourses">WDD</button>
+                    <button id="cseCourses">CSE</button>
+                </div>
+
+                <article class="courses-list"></article>
+                <p>
+                    The total(completed) credit for the course listed above is
+                    <span id="totalCredits"></span>.
+                </p>
+            </section>
+
+            <dialog id="course-dialog">
+                <button id="close-dialog" popovertargetaction="hide">
+                    &#x2715;
+                </button>
+                <h2 id="courseName"></h2>
+                <h3 id="courseTitle" class=""></h3>
+                <p><span id="dialogTotalCredits"></span> credits</p>
+                <p>Certicate: <span id="dialogCertificate"></span></p>
+                <p id="dialogDescription"></p>
+                <p>Technology: <span id="dialogTechnology"></span></p>
+            </dialog>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://github.com/Pika4ndy" target="_blank"
+                    ><img
+                        src="images/github-icon.svg"
+                        alt="Github Logo Icon"
+                        width="30"
+                        height="30"
+                /></a>
+                <a
+                    href="https://www.linkedin.com/in/andy-andrianarivo"
+                    target="_blank"
+                    ><img
+                        src="images/linkedin-icon.svg"
+                        alt="LinkedIn Logo Icon"
+                        width="30"
+                        height="30"
+                /></a>
+                <a href="https://www.facebook.com/pika4ndy/" target="_blank"
+                    ><img
+                        src="images/facebook-icon.svg"
+                        alt="Facebook Logo Icon"
+                        width="30"
+                        height="30"
+                /></a>
+                <a href="https://codepen.io/pika4ndy" target="_blank"
+                    ><img
+                        src="images/codepen-icon.svg"
+                        alt="Codepen Logo Icon"
+                        width="30"
+                        height="30"
+                /></a>
             </div>
-
-            <article class="courses-list">
-            </article>
-            <p>The total(completed) credit for the course listed above is <span id="totalCredits"></span>.</p>
-        </section>
-
-        <dialog id="course-dialog">
-            <button id="close-dialog" popovertargetaction="hide">&#x2715;</button>
-            <h2 id="courseName"></h2>
-            <h3 id="courseTitle" class=""></h3>
-            <p><span id="dialogTotalCredits"></span> credits</p>
-            <p>Certicate: <span id="dialogCertificate"></span></p>
-            <p id="dialogDescription"></p>
-            <p>Technology: <span id="dialogTechnology"></span></p>
-        </dialog>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://github.com/Pika4ndy" target="_blank"><img src="images/github-icon.svg" alt="Github Logo Icon" width="30" height="30"></a>
-            <a href="https://www.linkedin.com/in/andy-andrianarivo" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo Icon" width="30" height="30"></a>
-            <a href="https://www.facebook.com/pika4ndy/" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook Logo Icon" width="30" height="30"></a>
-            <a href="https://codepen.io/pika4ndy" target="_blank"><img src="images/codepen-icon.svg" alt="Codepen Logo Icon" width="30" height="30"></a>
-        </div>
-        <p id="copyright">&copy; <span id="currentYear"></span> &bull; Andrianarivo Andy &bull; Antananarivo, Madagascar</p>
-        <p id="lastModified"></p>
-    </footer>
-</body>
+            <p id="copyright">
+                &copy; <span id="currentYear"></span> &bull; Andrianarivo Andy
+                &bull; Antananarivo, Madagascar
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>

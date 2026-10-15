@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eureka — *Template* Page</title>
+        <meta name="author" content="Andrianarivo Andy" />
+        <meta
+            name="description"
+            content="Eureka Science Student Resource Hub"
+        />
+
+        <link rel="icon" href="images/favicon.ico" />
+
+        <meta property="og:title" content="Eureka Resource Hub" />
+        <meta
+            property="og:description"
+            content="Eureka Resource Hub Home Page — Browse among many formulas to learn and study"
+        />
+        <meta
+            property="og:image"
+            content="https://pika4ndy.github.io/wdd231/final/images/og-image.webp"
+        />
+        <meta
+            property="og:url"
+            content="https://pika4ndy.github.io/wdd231/final/index.html"
+        />
+        <meta property="og:type" content="Website" />
+
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link
+            rel="stylesheet"
+            href="styles/medium.css"
+            media="(min-width:600px) and (max-width:999px)"
+        />
+        <link
+            rel="stylesheet"
+            href="styles/large.css"
+            media="(min-width:1000px)"
+        />
+
+        <link rel="stylesheet" href="styles/home.css" />
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/toggle-theme.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="#"
+                ><img
+                    src="images/eureka-logo.svg"
+                    alt="Eureka Resource Hub Logo"
+                    width="60"
+                    height="60"
+            /></a>
+            <span class="site-name">
+                <a href="#">Eureka</a>
+            </span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./formulas.html">Formulas</a>
+                    </li>
+                    <li>
+                        <a href="./join.html">Join Us</a>
+                    </li>
+                    <!-- Insert Topics browsing -->
+                </ul>
+            </nav>
+            <button
+                class="toggle-theme"
+                aria-label="Toggle Dark Mode"
+                title="Toggle Dark Mode"
+            >
+                <img
+                    id="light-icon"
+                    src="images/light-icon.svg"
+                    alt="Light Mode Active"
+                    width="40"
+                    height="40"
+                />
+                <img
+                    id="dark-icon"
+                    src="images/dark-icon.svg"
+                    alt="Light Mode Active"
+                    width="40"
+                    height="40"
+                />
+            </button>
+            <button
+                id="hamburger"
+                aria-label="Open Navigation Menu"
+                title="Open Navigation Menu"
+            >
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+        <main>
+            <h1></h1>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <div class="internal-links">
+                    <span class="footer-title">Page links:</span>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./formulas.html">Formulas</a>
+                        </li>
+                        <li>
+                            <a href="./join.html">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-title">External Links:</span>
+                    <ul>
+                        <li>
+                            <a href="https://phet.colorado.edu"
+                                >PhET Interactive Simulation</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://pml.nist.gov/cuu/Constants/"
+                                >NIST Universal Constants</a
+                            >
+                        </li>
+                        <li><a href="https://arxiv.org">ArXiv</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p id="lastModified"></p>
+                <p>
+                    <a href="http://youtube.com/link-to-video" target="_blank"
+                        >Meeting the requirements Video</a
+                    >
+                </p>
+                <p><a href="./attributions.html">Attributions</a></p>
+                <p>WDD 231 — Final Project — BYU Idaho</p>
+                <p>
+                    &copy; <span id="current-year"></span> &bull; Eureka
+                    Resource Hub &bull; Andrianarivo Andy
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

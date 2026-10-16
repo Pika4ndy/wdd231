@@ -36,7 +36,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 
     /* Subtle border to lift from dark space backgrounds */
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffffff26;
 }
 
 .apod-glass-card h2 {
@@ -45,8 +45,10 @@
     text-align: center;
 }
 
-.apod-glass-card em {
-    text-decoration: underline;
+.apod-glass-card p a {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .apod-glass-card p {
@@ -91,7 +93,7 @@
     right: 0;
     width: 280px;
     padding: 1rem;
-    background-color: rgba(15, 15, 20, 0.9);
+    background-color: #0f0f14e6;
     color: #ffffff;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -120,7 +122,13 @@
     margin: 0;
     font-size: 0.85rem;
     line-height: 1.4;
-    color: rgba(255, 255, 255, 0.85);
+    color: #ffffffd9;
+}
+
+.tooltip-content .info {
+    color: var(--accent-color);
+    font-weight: 700;
+    background-color: #0f0f14;
 }
 
 .tooltip-content a {

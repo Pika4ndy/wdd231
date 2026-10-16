@@ -17,8 +17,9 @@ async function fetchAPOD() {
         }
 
         const data = await response.json();
-        const todayPicture = data[0];
         
+        const todayPicture = data[0];
+
         displayImage(todayPicture);
         
     } catch (error) {
@@ -29,13 +30,20 @@ async function fetchAPOD() {
 }
 
 function displayImage(APODdata) {
-    apodImage.src = APODdata.hdurl;
     apodImage.alt = APODdata.alt;
     apodImage.loading = "lazy";
     
 
     tooltipTitle.innerHTML = `APOD: <a href="${APODdata.permalink}" target="_blank">${APODdata.title}</a>`;
     tooltipCredit.innerHTML = `Credit: ${APODdata.credit}`;
+
+    if (APODdata.hdurl) {
+        apodImage.src = APODdata.hdurl;
+    } else {
+        apodImage.src = "./images/placeholder-image.webp";
+        tooltipCredit.innerHTML += "<br><span class=\"info\">Today's Image is unavailable. This picture is a placeholder</strong>";
+    }
+    
 }
 
 fetchAPOD();

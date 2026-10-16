@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Eureka — *Template* Page</title>
+        <title>About Eureka — Science Resource Hub</title>
         <meta name="author" content="Andrianarivo Andy" >
         <meta
             name="description"
-            content="Eureka Science Student Resource Hub"
+            content="Learn about Eureka, a science resource hub designed to help learners explore physics and study with clarity."
         >
 
         <link rel="icon" href="images/favicon.ico" >
 
-        <meta property="og:title" content="Eureka Resource Hub" >
+        <meta property="og:title" content="About Eureka — Science Resource Hub" >
         <meta
             property="og:description"
-            content="Eureka Resource Hub Home Page — Browse among many formulas to learn and study"
+            content="A science resource hub made for learning, with a focus on physics and clear explanations."
         >
         <meta
             property="og:image"
@@ -23,7 +23,7 @@
         >
         <meta
             property="og:url"
-            content="https://pika4ndy.github.io/wdd231/final/index.html"
+            content="https://pika4ndy.github.io/wdd231/final/about.html"
         >
         <meta property="og:type" content="Website" >
 
@@ -41,6 +41,7 @@
         >
 
         <link rel="stylesheet" href="styles/home.css" >
+        <link rel="stylesheet" href="styles/content.css" >
 
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
@@ -52,7 +53,7 @@
     </head>
     <body>
         <header>
-            <a href="#"
+            <a href="./index.html" aria-label="Eureka home"
                 ><img
                     src="images/eureka-logo.svg"
                     alt="Eureka Resource Hub Logo"
@@ -60,9 +61,9 @@
                     height="60"
             ></a>
             <span class="site-name">
-                <a href="#">Eureka</a>
+                <a href="./index.html">Eureka</a>
             </span>
-            <nav>
+            <nav id="primary-navigation" aria-label="Primary navigation">
                 <ul>
                     <li>
                         <a href="./index.html">Home</a>
@@ -72,6 +73,9 @@
                     </li>
                     <li>
                         <a href="./request.html">Request a Topic</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About Eureka</a>
                     </li>
                     <!-- Insert Topics browsing -->
                 </ul>
@@ -100,12 +104,64 @@
                 id="hamburger"
                 aria-label="Open Navigation Menu"
                 title="Open Navigation Menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
             >
                 <span></span><span></span><span></span>
             </button>
         </header>
-        <main>
-            <h1></h1>
+        <main class="content-page">
+            <section class="content-intro" aria-labelledby="about-title">
+                <p class="content-eyebrow">Science for curious minds</p>
+                <h1 id="about-title">About Eureka</h1>
+                <p class="content-lead">
+                    Eureka is a science resource hub made for learning. We bring
+                    physics ideas and study resources together to help learners
+                    explore how the world works.
+                </p>
+            </section>
+
+            <section class="content-grid" aria-label="About the resource hub">
+                <article class="content-card">
+                    <h2>Our purpose</h2>
+                    <p>
+                        Science becomes easier to explore when ideas are
+                        organized and explained clearly. Eureka is designed to
+                        support that journey, from reviewing an equation to
+                        building a stronger understanding of the concept behind it.
+                    </p>
+                </article>
+                <article class="content-card">
+                    <h2>Explore physics</h2>
+                    <p>
+                        The resource hub highlights subjects including
+                        mechanics, thermodynamics, waves, electromagnetism,
+                        optics, and modern physics. Use the topic guides to find
+                        a place to begin or continue studying.
+                    </p>
+                </article>
+                <article class="content-card">
+                    <h2>Learn with context</h2>
+                    <p>
+                        Equations are more useful when their symbols, units,
+                        and meaning are understood. Eureka aims to connect
+                        formulas with clear explanations and examples of how
+                        scientific ideas are applied.
+                    </p>
+                </article>
+            </section>
+
+            <section class="content-next-step" aria-labelledby="next-step-title">
+                <h2 id="next-step-title">Keep exploring</h2>
+                <p>
+                    Browse the formula topics or suggest a subject you would
+                    like to see covered.
+                </p>
+                <div class="content-actions">
+                    <a class="content-button" href="./formulas.html">Explore formulas</a>
+                    <a class="content-link" href="./request.html">Request a topic</a>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -121,6 +177,9 @@
                         </li>
                         <li>
                             <a href="./request.html">Request a Topic</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Eureka</a>
                         </li>
                     </ul>
                 </div>

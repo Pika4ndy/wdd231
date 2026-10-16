@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Eureka — *Template* Page</title>
+        <title>Physics Topics — Eureka Resource Hub</title>
         <meta name="author" content="Andrianarivo Andy" >
         <meta
             name="description"
-            content="Eureka Science Student Resource Hub"
+            content="Explore physics subjects and find a starting point for learning with the Eureka Science Resource Hub."
         >
 
         <link rel="icon" href="images/favicon.ico" >
 
-        <meta property="og:title" content="Eureka Resource Hub" >
+        <meta property="og:title" content="Physics Topics — Eureka Resource Hub" >
         <meta
             property="og:description"
-            content="Eureka Resource Hub Home Page — Browse among many formulas to learn and study"
+            content="Explore physics topics including mechanics, thermodynamics, waves, electromagnetism, optics, and modern physics."
         >
         <meta
             property="og:image"
@@ -23,7 +23,7 @@
         >
         <meta
             property="og:url"
-            content="https://pika4ndy.github.io/wdd231/final/index.html"
+            content="https://pika4ndy.github.io/wdd231/final/formulas.html"
         >
         <meta property="og:type" content="Website" >
 
@@ -41,6 +41,7 @@
         >
 
         <link rel="stylesheet" href="styles/home.css" >
+        <link rel="stylesheet" href="styles/content.css" >
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +53,7 @@
     </head>
     <body>
         <header>
-            <a href="#"
+            <a href="./index.html" aria-label="Eureka home"
                 ><img
                     src="images/eureka-logo.svg"
                     alt="Eureka Resource Hub Logo"
@@ -60,9 +61,9 @@
                     height="60"
             ></a>
             <span class="site-name">
-                <a href="#">Eureka</a>
+                <a href="./index.html">Eureka</a>
             </span>
-            <nav>
+            <nav id="primary-navigation" aria-label="Primary navigation">
                 <ul>
                     <li>
                         <a href="./index.html">Home</a>
@@ -72,6 +73,9 @@
                     </li>
                     <li>
                         <a href="./request.html">Request a Topic</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About Eureka</a>
                     </li>
                     <!-- Insert Topics browsing -->
                 </ul>
@@ -100,12 +104,60 @@
                 id="hamburger"
                 aria-label="Open Navigation Menu"
                 title="Open Navigation Menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
             >
                 <span></span><span></span><span></span>
             </button>
         </header>
-        <main>
-            <h1>Formulas</h1>
+        <main class="content-page">
+            <section class="content-intro" aria-labelledby="topics-title">
+                <p class="content-eyebrow">Explore the sciences</p>
+                <h1 id="topics-title">Physics Topics</h1>
+                <p class="content-lead">
+                    Start with a subject that interests you. Each topic connects
+                    to an overview on the home page, where you can browse its
+                    key ideas and related resources.
+                </p>
+            </section>
+
+            <section class="topic-grid" aria-label="Physics subject areas">
+                <article class="content-card" id="mechanics">
+                    <h2>Classical Mechanics</h2>
+                    <p>Motion, forces, energy, and momentum.</p>
+                    <a class="content-link" href="./index.html#topic-mechanics">Explore mechanics</a>
+                </article>
+                <article class="content-card" id="thermo">
+                    <h2>Thermodynamics</h2>
+                    <p>Heat, temperature, and the behavior of gases.</p>
+                    <a class="content-link" href="./index.html#topic-thermo">Explore thermodynamics</a>
+                </article>
+                <article class="content-card" id="waves">
+                    <h2>Waves &amp; Sound</h2>
+                    <p>Frequency, wavelength, and wave motion.</p>
+                    <a class="content-link" href="./index.html#topic-waves">Explore waves</a>
+                </article>
+                <article class="content-card" id="em">
+                    <h2>Electromagnetism</h2>
+                    <p>Electricity, magnetism, circuits, and fields.</p>
+                    <a class="content-link" href="./index.html#topic-em">Explore electromagnetism</a>
+                </article>
+                <article class="content-card" id="optics">
+                    <h2>Optics</h2>
+                    <p>Light, reflection, refraction, and lenses.</p>
+                    <a class="content-link" href="./index.html#topic-optics">Explore optics</a>
+                </article>
+                <article class="content-card" id="modern">
+                    <h2>Modern Physics</h2>
+                    <p>Ideas from quantum physics and relativity.</p>
+                    <a class="content-link" href="./index.html#topic-modern">Explore modern physics</a>
+                </article>
+            </section>
+
+            <p class="content-footnote">
+                Looking for a specific subject? <a href="./request.html">Suggest a topic</a>
+                for the resource hub.
+            </p>
         </main>
 
         <footer>
@@ -121,6 +173,9 @@
                         </li>
                         <li>
                             <a href="./request.html">Request a Topic</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Eureka</a>
                         </li>
                     </ul>
                 </div>

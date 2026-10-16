@@ -1,0 +1,73 @@
+main {
+    width: min(100%, 900px);
+    min-height: 55vh;
+    margin: 0 auto;
+    padding: clamp(2rem, 7vw, 5rem) 1.25rem;
+}
+
+.form-response {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.page-eyebrow {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.form-response h1 {
+    margin-bottom: 0.8rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.response-intro {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.form-summary {
+    overflow: hidden;
+    border: 1px solid var(--faint);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 0.5rem;
+    background: var(--background-color);
+}
+
+.form-summary:empty {
+    display: none;
+}
+
+.form-summary > div {
+    display: grid;
+    grid-template-columns: minmax(8rem, 0.7fr) minmax(0, 1.3fr);
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+}
+
+.form-summary > div + div {
+    border-top: 1px solid var(--faint);
+}
+
+.form-summary dt {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.form-summary dd {
+    margin: 0;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 520px) {
+    .form-summary > div {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+        padding: 0.9rem 1rem;
+    }
+}

@@ -1,3 +1,69 @@
 @media screen and (min-width:600px) and (max-width:999px) {
-    
+    header {
+        grid-template-columns: 52px 100px minmax(0, 1fr) 44px;
+        gap: 0.5rem;
+        padding: 0.55rem 1rem;
+    }
+
+    header > a:first-child img,
+    header > a:first-child svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    header .site-name {
+        font-size: 1.45rem;
+    }
+
+    header nav {
+        position: static;
+        visibility: visible;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        transition: none;
+        z-index: auto;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.15rem;
+    }
+
+    header li {
+        width: auto;
+        border: 0;
+    }
+
+    header nav a {
+        padding: 0.7rem 0.45rem;
+        border-radius: 0.35rem;
+        font-size: 0.82rem;
+        white-space: nowrap;
+    }
+
+    header nav a[aria-current="page"] {
+        border-bottom: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .toggle-theme {
+        width: 42px;
+        height: 42px;
+    }
+
+    .toggle-theme img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 2rem;
+    }
 }

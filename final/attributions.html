@@ -1,28 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attributions For the Final Project</title>
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="Sources and credits for imagery and resources used by the Eureka Science Resource Hub.">
+    <title>Attributions — Eureka Resource Hub</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width:600px) and (max-width:999px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width:1000px)">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/toggle-theme.js" defer></script>
 </head>
 <body>
-    <h1>Attributions for Photos and Other Resources</h1>
-    <section>
-        <h2>Images</h2>
-        <article>
-            <h3>Logo</h3>
-            Logo by <a href="https://logoipsum.com/artwork/279">Logoipsum</a>
-        </article>
-
-        <article>
-            <h3>OpenGraph Image</h3>
-            Photo by <a href="https://unsplash.com/@pyssling240?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas T</a> on <a href="https://unsplash.com/photos/a-blackboard-with-a-lot-of-writing-on-it-OPpCbAAKWv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </article>
-
-        <article>
-            <h3>Hero Image</h3>
-            <a href="https://science.nasa.gov/apod/apod-index/">APOD (Astronomic Picture Of the Day)</a>
-        </article>
-    </section>
+    <header>
+        <a href="./index.html" aria-label="Eureka home">
+            <img src="images/eureka-logo.svg" alt="Eureka Resource Hub Logo" width="60" height="60">
+        </a>
+        <span class="site-name"><a href="./index.html">Eureka</a></span>
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./formulas.html">Formulas</a></li>
+                <li><a href="./request.html">Request a Topic</a></li>
+                <li><a href="./about.html">About Eureka</a></li>
+            </ul>
+        </nav>
+        <button class="toggle-theme" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+            <img id="light-icon" src="images/light-icon.svg" alt="Light Mode Active" width="40" height="40">
+            <img id="dark-icon" src="images/dark-icon.svg" alt="Dark Mode Active" width="40" height="40">
+        </button>
+        <button id="hamburger" aria-label="Open Navigation Menu" title="Open Navigation Menu" aria-controls="primary-navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <main class="content-page attribution-page">
+        <section class="content-intro" aria-labelledby="attributions-title">
+            <p class="content-eyebrow">Credits and sources</p>
+            <h1 id="attributions-title">Attributions</h1>
+            <p class="content-lead">
+                This page recognizes the creators and sources of visual
+                resources used throughout the Eureka Resource Hub.
+            </p>
+        </section>
+        <section aria-labelledby="images-title">
+            <h2 id="images-title">Images and visual resources</h2>
+            <article class="attribution-entry">
+                <h3>Logo</h3>
+                <p>Logo by <a href="https://logoipsum.com/artwork/279">Logoipsum</a>.</p>
+            </article>
+            <article class="attribution-entry">
+                <h3>Open Graph image</h3>
+                <p>
+                    Photo by
+                    <a href="https://unsplash.com/@pyssling240?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thomas T</a>
+                    on
+                    <a href="https://unsplash.com/photos/a-blackboard-with-a-lot-of-writing-on-it-OPpCbAAKWv8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>.
+                </p>
+            </article>
+            <article class="attribution-entry">
+                <h3>Home page science image</h3>
+                <p>
+                    <a href="https://science.nasa.gov/apod/apod-index/">NASA Astronomy Picture of the Day</a>.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <div class="internal-links">
+                <span class="footer-title">Explore Eureka</span>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./formulas.html">Formulas</a></li>
+                    <li><a href="./request.html">Request a Topic</a></li>
+                    <li><a href="./about.html">About Eureka</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-title">Science resources</span>
+                <ul>
+                    <li><a href="https://phet.colorado.edu">PhET Interactive Simulations</a></li>
+                    <li><a href="https://pml.nist.gov/cuu/Constants/">NIST Universal Constants</a></li>
+                    <li><a href="https://arxiv.org">arXiv</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p id="lastModified"></p>
+            <p><a href="./attributions.html">Attributions</a></p>
+            <p>WDD 231 — Final Project — BYU Idaho</p>
+            <p>&copy; <span id="current-year"></span> Eureka Resource Hub &bull; Andrianarivo Andy</p>
+        </div>
+    </footer>
 </body>
 </html>

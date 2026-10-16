@@ -1,10 +1,21 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.querySelector("header nav");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    navMenu.classList.toggle("open");
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        const isOpen = hamburger.classList.toggle("open");
+        navMenu.classList.toggle("open", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+        hamburger.setAttribute(
+            "aria-label",
+            isOpen ? "Close Navigation Menu" : "Open Navigation Menu"
+        );
+        hamburger.setAttribute(
+            "title",
+            isOpen ? "Close Navigation Menu" : "Open Navigation Menu"
+        );
+    });
+}
 
 const currentPage = location.pathname.split("/").pop() || "index.html";
 
